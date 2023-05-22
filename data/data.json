@@ -1,0 +1,182 @@
+[
+  {
+    "slug": "lifestyle",
+    "backgroundImage": "../src/images/04 Investment/header.jpg",
+    "title": "Lifestyle",
+    "icon": "../src/images/04 Investment/Asset 3.png",
+    "subTitle": "Learn about lifestyle",
+    "desc": "Experience the magic of extraordinary lifestyle experiences with Kefi. Our team is dedicated to blending creativity and comfort in unexpected ways, crafting unforgettable stays that combine intimate charm with lavish luxuries, creating memories that will last a lifetime. Learn more about our approach to lifestyle and discover how we can help you create your own unforgettable experiences.",
+    "images": [
+      {
+        "image": "../src/images/07 Lifestyle/In frame/Gallery item.png",
+        "colspan": 2,
+        "rowspan": 2
+      },
+      {
+        "image": "../src/images/07 Lifestyle/In frame/Gallery item-1.png",
+        "colspan": 2,
+        "rowspan": 0
+      },
+      {
+        "image": "../src/images/07 Lifestyle/In frame/Gallery item-2.png",
+        "colspan": 3,
+        "rowspan": 0
+      },
+      {
+        "image": "../src/images/07 Lifestyle/In frame/Gallery item.png",
+        "colspan": 2,
+        "rowspan": 2
+      },
+      {
+        "image": "../src/images/07 Lifestyle/In frame/Gallery item-1.png",
+        "colspan": 2,
+        "rowspan": 0
+      },
+      {
+        "image": "../src/images/07 Lifestyle/In frame/Gallery item-2.png",
+        "colspan": 3,
+        "rowspan": 0
+      },
+      {
+        "image": "../src/images/07 Lifestyle/In frame/image.png",
+        "colspan": 2,
+        "rowspan": 0
+      },
+      {
+        "image": "../src/images/07 Lifestyle/In frame/Gallery item-3.png",
+        "colspan": 3,
+        "rowspan": 0
+      },
+      {
+        "image": "../src/images/07 Lifestyle/In frame/image.png",
+        "colspan": 2,
+        "rowspan": 0
+      },
+      {
+        "image": "../src/images/07 Lifestyle/In frame/Gallery item-3.png",
+        "colspan": 3,
+        "rowspan": 0
+      }
+    ]
+  },
+  {
+    "slug": "wellbeing",
+    "backgroundImage": "../src/images/04 Investment/header.jpg",
+    "title": "Wellbeing",
+    "icon": "../src/images/04 Investment/Asset 3.png",
+    "subTitle": "Learn about lifestyle",
+    "desc": "Experience the magic of extraordinary lifestyle experiences with Kefi. Our team is dedicated to blending creativity and comfort in unexpected ways, crafting unforgettable stays that combine intimate charm with lavish luxuries, creating memories that will last a lifetime. Learn more about our approach to lifestyle and discover how we can help you create your own unforgettable experiences.",
+    "images": [
+      {
+        "image": "../src/images/07 Lifestyle/In frame/Gallery item.png",
+        "colspan": 2,
+        "rowspan": 2
+      },
+      {
+        "image": "../src/images/07 Lifestyle/In frame/Gallery item-1.png",
+        "colspan": 2,
+        "rowspan": 0
+      },
+      {
+        "image": "../src/images/07 Lifestyle/In frame/Gallery item-2.png",
+        "colspan": 3,
+        "rowspan": 0
+      },
+      {
+        "image": "../src/images/07 Lifestyle/In frame/Gallery item.png",
+        "colspan": 2,
+        "rowspan": 2
+      },
+      {
+        "image": "../src/images/07 Lifestyle/In frame/Gallery item-1.png",
+        "colspan": 2,
+        "rowspan": 0
+      },
+      {
+        "image": "../src/images/07 Lifestyle/In frame/Gallery item-2.png",
+        "colspan": 3,
+        "rowspan": 0
+      },
+      {
+        "image": "../src/images/07 Lifestyle/In frame/image.png",
+        "colspan": 2,
+        "rowspan": 0
+      },
+      {
+        "image": "../src/images/07 Lifestyle/In frame/Gallery item-3.png",
+        "colspan": 3,
+        "rowspan": 0
+      },
+      {
+        "image": "../src/images/07 Lifestyle/In frame/image.png",
+        "colspan": 2,
+        "rowspan": 0
+      },
+      {
+        "image": "../src/images/07 Lifestyle/In frame/Gallery item-3.png",
+        "colspan": 3,
+        "rowspan": 0
+      }
+    ]
+  },
+  {
+    "slug": "foods-and-bevarages",
+    "backgroundImage": "../src/images/04 Investment/header.jpg",
+    "title": "Foods and Bevarages",
+    "icon": "../src/images/04 Investment/Asset 3.png",
+    "subTitle": "Learn about lifestyle",
+    "desc": "Experience the magic of extraordinary lifestyle experiences with Kefi. Our team is dedicated to blending creativity and comfort in unexpected ways, crafting unforgettable stays that combine intimate charm with lavish luxuries, creating memories that will last a lifetime. Learn more about our approach to lifestyle and discover how we can help you create your own unforgettable experiences.",
+    "images": [
+      {
+        "image": "../src/images/07 Lifestyle/In frame/Gallery item.png",
+        "colspan": 2,
+        "rowspan": 2
+      },
+      {
+        "image": "../src/images/07 Lifestyle/In frame/Gallery item-1.png",
+        "colspan": 2,
+        "rowspan": 0
+      },
+      {
+        "image": "../src/images/07 Lifestyle/In frame/Gallery item-2.png",
+        "colspan": 3,
+        "rowspan": 0
+      },
+      {
+        "image": "../src/images/07 Lifestyle/In frame/Gallery item.png",
+        "colspan": 2,
+        "rowspan": 2
+      },
+      {
+        "image": "../src/images/07 Lifestyle/In frame/Gallery item-1.png",
+        "colspan": 2,
+        "rowspan": 0
+      },
+      {
+        "image": "../src/images/07 Lifestyle/In frame/Gallery item-2.png",
+        "colspan": 3,
+        "rowspan": 0
+      },
+      {
+        "image": "../src/images/07 Lifestyle/In frame/image.png",
+        "colspan": 2,
+        "rowspan": 0
+      },
+      {
+        "image": "../src/images/07 Lifestyle/In frame/Gallery item-3.png",
+        "colspan": 3,
+        "rowspan": 0
+      },
+      {
+        "image": "../src/images/07 Lifestyle/In frame/image.png",
+        "colspan": 2,
+        "rowspan": 0
+      },
+      {
+        "image": "../src/images/07 Lifestyle/In frame/Gallery item-3.png",
+        "colspan": 3,
+        "rowspan": 0
+      }
+    ]
+  }
+]
