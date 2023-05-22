@@ -23,12 +23,18 @@ const WellbeingPage = () => {
           publicURL
         }
       }
-      header: file(relativePath: { eq: "04 Investment/header.jpg" }) {
+      header: file(
+        relativePath: {
+          eq: "08 Well-being/219_webedia-articles_fed_783_ac3115cd9f9d738a81a407eb7d_1551588-posez-vos-mains-sous-votre-nombril-et-ex-orig-1.jpeg"
+        }
+      ) {
         childImageSharp {
           gatsbyImageData(width: 1920, quality: 100, placeholder: BLURRED)
         }
       }
-      lifestyle: file(relativePath: { eq: "04 Investment/Asset 3.png" }) {
+      lifestyle: file(
+        relativePath: { eq: "08 Well-being/Well-being icon.png" }
+      ) {
         childImageSharp {
           gatsbyImageData(width: 1920, quality: 100, placeholder: BLURRED)
         }
@@ -146,7 +152,7 @@ const WellbeingPage = () => {
               </Fade>
               <Fade right>
                 <div className="flex justify-center font-poppins text-5xl text-white font-bold">
-                  Lifestyle
+                  Well being
                 </div>
               </Fade>
             </div>
@@ -159,18 +165,19 @@ const WellbeingPage = () => {
           <div className="flex md:flex-row flex-col justify-center gap-5 items-center text-primaryDarkBlue md:text-left text-center">
             <Fade left>
               <div className=" font-poppins text-4xl  font-bold max-w-xs leading-snug ">
-                Learn about lifestyle
+                Learn about Well being
               </div>
             </Fade>
             <Fade right>
               <div className="max-w-xl">
-                Experience the magic of extraordinary lifestyle experiences with
-                Kefi. Our team is dedicated to blending creativity and comfort
-                in unexpected ways, crafting unforgettable stays that combine
-                intimate charm with lavish luxuries, creating memories that will
-                last a lifetime. Learn more about our approach to lifestyle and
-                discover how we can help you create your own unforgettable
-                experiences.
+                We understand the importance of wellbeing for a fulfilling life,
+                which is why our team at Kefi is dedicated to creating healing
+                experiences that refresh and rejuvenate the mind and soul. With
+                personalized relaxation services, delicious cuisine, and
+                tranquil environments, our goal is to help you escape the
+                outside world and find inner peace. Discover more about our
+                approach to wellbeing and how we can help you create your own
+                oasis of serenity.
               </div>
             </Fade>
           </div>

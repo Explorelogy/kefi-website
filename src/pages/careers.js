@@ -11,7 +11,7 @@ import Idea from "../components/idea"
 import Fade from "react-reveal/Fade"
 import { Zoom, Bounce } from "react-reveal"
 
-const FoodAndBeveragePage = () => {
+const LifestylePage = () => {
   const data = useStaticQuery(graphql`
     query {
       allFile(filter: { sourceInstanceName: { eq: "images" } }) {
@@ -23,7 +23,11 @@ const FoodAndBeveragePage = () => {
           publicURL
         }
       }
-      header: file(relativePath: { eq: "04 Investment/header.jpg" }) {
+      header: file(
+        relativePath: {
+          eq: "10 Careers/barista-working-in-a-coffee-shop-2021-08-28-02-49-23-utc (1).jpg"
+        }
+      ) {
         childImageSharp {
           gatsbyImageData(width: 1920, quality: 100, placeholder: BLURRED)
         }
@@ -131,92 +135,36 @@ const FoodAndBeveragePage = () => {
   return (
     <Layout>
       <section>
-        <div className="relative h-full">
-          <BackgroundImage {...allImages.header} className="bg-right-top py-16">
-            <div className="bg-[#171A40]/60 absolute top-0 w-full h-full z-10" />
-            <div className="py-24 px-32 gap-10  z-20 relative   flex md:flex-row flex-col justify-center items-center h-full">
-              <Fade left>
-                <div className="md:w-24 w-16">
-                  <GatsbyImage
-                    image={allImages.lifestyle}
-                    className="w-full"
-                    alt="header"
-                  />
-                </div>
-              </Fade>
-              <Fade right>
+        <div className="relative h-full mb-10">
+          <BackgroundImage
+            {...allImages.header}
+            className=" py-40 bg-center "
+          >
+            <div className="bg-[#313131B5]/60 absolute top-0 w-full h-full z-10" />
+            <div className="py-24 px-32 gap-10 flex flex-col z-20 relative justify-center items-center h-full">
+              <Zoom>
                 <div className="flex justify-center font-poppins text-5xl text-white font-bold">
-                Food & Beverage
+                  Join The Dream Team!
                 </div>
-              </Fade>
+              </Zoom>
+              <Zoom>
+                <div className="flex justify-center font-poppins max-w-2xl text-center font-extralight text-white ">
+                  Embark on a Journey of Endless Opportunities, Growth, and
+                  Success - Join Our Dynamic and Innovative Team and Unleash
+                  Your Full Potential to Achieve Your Dreams and Beyond!
+                </div>
+              </Zoom>
+              <Zoom>
+                <div className="px-6 py-4 rounded-lg text-lg text-white bg-primaryDarkBlue font-semibold font-poppins cursor-pointer hover:bg-primaryBlue duration-200 hover:text-white  flex justify-center">
+                  Check openings
+                </div>
+              </Zoom>
             </div>
           </BackgroundImage>
         </div>
-      </section>
-
-      <section>
-        <div className="bg-gray-200/30 py-24 md:px-32 px-10">
-          <div className="flex md:flex-row flex-col justify-center gap-5 items-center text-primaryDarkBlue md:text-left text-center">
-            <Fade left>
-              <div className=" font-poppins text-4xl  font-bold max-w-xs leading-snug ">
-              Learn about 
-Food & Beverage
-              </div>
-            </Fade>
-            <Fade right>
-              <div className="max-w-xl">
-              At Kefi, we believe that food and drinks are not just about nourishment, but also about creating unforgettable experiences. Our team of experts develops innovative ideas that blend delicious flavours with a relaxing atmosphere to deliver exceptional culinary experiences. Discover how our passion for food and beverages can help you bring your own unique vision to life.
-              </div>
-            </Fade>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <div
-          className="overflow-x-scroll md:ml-24 ml-10 scrollbar-hide mt-16"
-          onScroll={event => updateScrollPercentage(event)}
-        >
-          <div className="grid grid-cols-14 relative gap-5 md:w-[2700px] w-[1800px]">
-            {masonry.map((item, index) => {
-              return (
-                <Zoom>
-                  <div className={`bg-primaryDarkBlue ${item.span}`}>
-                    <GatsbyImage
-                      image={getImage(
-                        data.allFile.nodes.find(
-                          node => node.name === item.image
-                        )
-                      )}
-                      alt={item.image}
-                      className="w-full h-full bg-cover"
-                    />
-                  </div>
-                </Zoom>
-              )
-            })}
-          </div>
-        </div>
-        <Zoom>
-          <div className="pagination flex justify-center items-center mt-10 gap-2 ">
-            <span className="dot"></span>
-            <span className="dot"></span>
-            <span className="dot"></span>
-            <span className="dot"></span>
-            <span className="dot"></span>
-            <span className="dot"></span>
-          </div>
-        </Zoom>
-      </section>
-      <section>
-        <Zoom>
-          <div className="lg:px-80 px-10 lg:py-24 py-20">
-            <Idea />
-          </div>
-        </Zoom>
       </section>
     </Layout>
   )
 }
 
-export default FoodAndBeveragePage
+export default LifestylePage
