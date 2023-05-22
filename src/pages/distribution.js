@@ -23,12 +23,12 @@ const DistributionPage = () => {
           publicURL
         }
       }
-      header: file(relativePath: { eq: "04 Investment/header.jpg" }) {
+      header: file(relativePath: { eq: "05 Distribution/empty-warehouse-in-logistic-center-warehouse-for-s-2022-12-16-11-54-11-utc.jpg" }) {
         childImageSharp {
           gatsbyImageData(width: 1920, quality: 100, placeholder: BLURRED)
         }
       }
-      lifestyle: file(relativePath: { eq: "04 Investment/Asset 3.png" }) {
+      lifestyle: file(relativePath: { eq: "05 Distribution/Distribution icon.png" }) {
         childImageSharp {
           gatsbyImageData(width: 1920, quality: 100, placeholder: BLURRED)
         }
@@ -68,22 +68,22 @@ const DistributionPage = () => {
 
   const logos = [
     {
-      image: "logo-1",
+      image: "logo-1l",
     },
     {
-      image: "logo-2",
+      image: "logo-2l",
     },
     {
-      image: "logo-3",
+      image: "logo-3l",
     },
     {
-      image: "logo-4",
+      image: "logo-4l",
     },
     {
       image: "kepts men",
     },
     {
-      image: "logo",
+      image: "logol",
     },
   ]
 
@@ -167,7 +167,7 @@ const DistributionPage = () => {
               </Fade>
               <Fade right>
                 <div className="flex justify-center font-poppins text-5xl text-white font-bold">
-                  Lifestyle
+                Distribution
                 </div>
               </Fade>
             </div>
@@ -180,18 +180,18 @@ const DistributionPage = () => {
           <div className="flex md:flex-row flex-col justify-center gap-5 items-center text-primaryDarkBlue md:text-left text-center">
             <Fade left>
               <div className=" font-poppins text-4xl  font-bold max-w-xs leading-snug ">
-                Learn about lifestyle
+                Learn about Distribution
               </div>
             </Fade>
             <Fade right>
               <div className="max-w-xl">
-                Experience the magic of extraordinary lifestyle experiences with
-                Kefi. Our team is dedicated to blending creativity and comfort
-                in unexpected ways, crafting unforgettable stays that combine
-                intimate charm with lavish luxuries, creating memories that will
-                last a lifetime. Learn more about our approach to lifestyle and
-                discover how we can help you create your own unforgettable
-                experiences.
+                Discover how Kefi's extensive infrastructure network can
+                streamline your distribution process and ensure your products
+                are delivered on time and in perfect condition. With our expert
+                supply chain logistics, you can trust us to handle your
+                distribution needs with precision and efficiency, allowing you
+                to focus on delivering the best possible customer experience.
+                Learn more about our distribution solutions today.
               </div>
             </Fade>
           </div>
@@ -243,7 +243,7 @@ const DistributionPage = () => {
       </section>
 
       <section>
-        <div className="md:px-32 px-10  py-24 bg-[#877465] my-24">
+        <div className="md:px-32 px-10  py-24 bg-[#877465] my-10">
           <div className="text-center">
             <div className=" font-extrabold font-poppins  text-white text-4xl">
               Distribution Brands
