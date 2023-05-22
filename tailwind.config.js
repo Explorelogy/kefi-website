@@ -6,6 +6,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      width: {
+        extralarge: "2700px",
+        large: "2000px",
+      },
       colors: {
         primaryDarkBlue: "#1F3866",
         primaryLightBlue: "#B1C4D4",
@@ -19,7 +23,10 @@ module.exports = {
         montserrat: ["Montserrat"],
         poppins: ["Poppins, sans-serif"],
       },
+      gridTemplateColumns: {
+        14: "repeat(14, minmax(0, 1fr))",
+      },
     },
   },
-  plugins: [],
+  plugins: [require("tailwind-scrollbar-hide")],
 }

@@ -13,3 +13,50 @@ html {
   color: #212121;
   scroll-behavior: smooth;
 }
+
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #b1c4d4;
+
+  margin: 0 2px;
+  cursor: pointer;
+  transition: background-color 0.1s ease-in-out;
+}
+
+.dot.active {
+  width: 15px;
+  height: 15px;
+  background-color: #1f3866;
+}
+
+.dot:hover {
+  background-color: #1f3866;
+}
+.masonry {
+  width: 2700px;
+  margin-left: 6rem;
+  margin-top: 4rem;
+}
+/* @media only screen and (min-width: 768px) {
+  .masonry {
+    width: 1000px;
+  }
+} */
+@media only screen and (max-width: 600px) {
+  .masonry {
+    width: 1700px;
+    margin-left: 2.5rem;
+  }
+  .idea {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
+.idea {
+  padding-left: 20rem;
+  padding-right: 20rem;
+}
