@@ -6,7 +6,8 @@ import Seo from "../components/seo"
 import { StaticImage, GatsbyImage, getImage } from "gatsby-plugin-image"
 import BackgroundImage from "gatsby-background-image"
 import { convertToBgImage } from "gbimage-bridge"
-
+import Fade from "react-reveal/Fade"
+import Idea from "../components/idea"
 const AboutUs = () => {
   const data = useStaticQuery(graphql`
     query {
@@ -54,14 +55,14 @@ const AboutUs = () => {
   `)
 
   const allImages = {
-    header: getImage(data.header),
+    header: convertToBgImage(getImage(data.header)),
     coffee: convertToBgImage(getImage(data.coffee)),
   }
 
   const areas = [
     {
       name: "Distribution",
-      icon: "icon",
+      icon: "icond",
       link: "",
     },
     {
@@ -109,28 +110,32 @@ const AboutUs = () => {
     <Layout>
       <section>
         <div className="relative h-full">
-          <div className="bg-[#171A40]/60 absolute top-0 w-full h-full z-10" />
-          <GatsbyImage
-            image={allImages.header}
-            className="h-[350px] w-full"
-            alt="header"
-          />
-          <div className="absolute inset-0 flex items-center justify-center text-4xl font-poppins e font-bold z-20 text-white">
-            About Us
-          </div>
+          <BackgroundImage {...allImages.header} className="bg-right-top py-16">
+            <div className="bg-[#171A40]/60 absolute top-0 w-full h-full z-10" />
+            <div className="py-24 lg:px-32 px-10 gap-10  z-20 relative   flex md:flex-row flex-col justify-center items-center h-full">
+              <Fade right>
+                <div className="flex justify-center font-poppins text-5xl text-white font-bold">
+                  About Us
+                </div>
+              </Fade>
+            </div>
+          </BackgroundImage>
         </div>
       </section>
       <section>
-        <div className="px-32 py-24">
+        <div className="lg:px-32 px-10 py-24">
           <div className="flex justify-center items-center">
-            <div className="flex gap-20 justify-center">
+            <div className="flex lg:flex-row flex-col lg:justify-start w-full gap-20 justify-center">
               {" "}
-              <div className="w-1/3">
-                <StaticImage src="../images/03 About us/artwork.png" />
+              <div className="lg:w-1/3 w-1/2 mx-auto">
+                <StaticImage
+                  src="../images/03 About us/artwork.png"
+                  className="w-full"
+                />
               </div>
-              <div className="flex ">
+              <div className="flex justify-center ">
                 <div>
-                  <div className=" max-w-xl mb-10 mx-auto">
+                  <div className=" max-w-xl lg:text-left text-center mb-10">
                     Kefi Hospitality Group is a hospitality investment and
                     operations/ management company that is driven to create
                     pioneering concepts and renowned brands that imbue
@@ -140,27 +145,29 @@ const AboutUs = () => {
                     <br />
                     The areas in the Hospitality Industry we focus on are
                   </div>
-                  <div className="flex ml-16">
-                    <div className="grid grid-cols-2 grid-rows-2">
-                      {areas.map((item, index) => {
-                        return (
-                          <div key={index} className="flex m-2 ">
-                            <GatsbyImage
-                              image={getImage(
-                                data.allFile.nodes.find(
-                                  node => node.name === item.icon
-                                )
-                              )}
-                              alt={item.alt}
-                              className="w-[96px] h-[96px]"
-                            />
-                            <div className="text-xl mt-5 font-semibold py-4 px-5">
-                              {item.name}
-                            </div>
+
+                  <div className="grid lg:grid-cols-2 grid-cols-1 grid-rows-2 gap-4">
+                    {areas.map((item, index) => {
+                      return (
+                        <div
+                          key={index}
+                          className="flex lg:flex-row flex-col lg:justify-start justify-center w-full items-center gap-4  "
+                        >
+                          <GatsbyImage
+                            image={getImage(
+                              data.allFile.nodes.find(
+                                node => node.name === item.icon
+                              )
+                            )}
+                            alt={item.alt}
+                            className="w-1/4 lg:mx-0 mx-auto"
+                          />
+                          <div className="text-xl  font-semibold ">
+                            {item.name}
                           </div>
-                        )
-                      })}
-                    </div>
+                        </div>
+                      )
+                    })}
                   </div>
                 </div>
               </div>
@@ -169,15 +176,15 @@ const AboutUs = () => {
         </div>
       </section>
       <section>
-        <div className="px-32 py-24  bg-primaryLightBlue">
+        <div className="md:px-32 px-10 py-24  bg-primaryLightBlue">
           <div className="felx  ">
-            <div className="flex justify-center items-center gap-20 font-semibold text-primaryDarkBlue">
+            <div className="flex lg:flex-row flex-col justify-center items-center gap-20 font-semibold text-primaryDarkBlue">
               <div className="text-4xl font-bold">Our Values</div>
               <div>
                 {cdata.map((item, index) => {
                   return (
-                    <div key={index} className="flex py-5 items-center">
-                      <div className="bg-primaryDarkBlue rounded-full w-3 h-3"></div>
+                    <div key={index} className="flex mb-6 items-center">
+                      <div className="bg-primaryDarkBlue rounded-full w-3 h-3 flex-shrink-0"></div>
                       <div className="px-5">{item.name}</div>
                     </div>
                   )
@@ -188,7 +195,7 @@ const AboutUs = () => {
         </div>
       </section>
       <section>
-        <div className="px-32 py-24 ">
+        <div className="md:px-32 px-10 py-24 ">
           <div className="m-8">
             <div className="text-center">
               <div className="text-4xl font-bold text-primaryDarkBlue mb-8">
@@ -201,29 +208,29 @@ const AboutUs = () => {
               </div>
             </div>
           </div>
-          <div className="px-32 py-24">
-            <div className="flex justify-between gap-16 ">
+          <div className="md:px-32 px-10 ">
+            <div className="flex lg:flex-row flex-col justify-between gap-16 items-center ">
               <div className="w-1/2">
                 <StaticImage src="../images/03 About us/Brands/logo.png" />
               </div>
 
-              <div className="pt-16">
+              <div className="">
                 <StaticImage src="../images/03 About us/Brands/logo-1.png" />
               </div>
 
-              <div className="w-1/2 pt-16">
+              <div className="w-1/2 ">
                 <StaticImage src="../images/03 About us/Brands/logo-2.png" />
               </div>
 
-              <div className="w-1/2 pt-16">
+              <div className="w-1/2 ">
                 <StaticImage src="../images/03 About us/Brands/logo-3.png" />
               </div>
 
-              <div className="w-1/2 pt-16">
+              <div className="w-1/2 ">
                 <StaticImage src="../images/03 About us/Brands/logo-4.png" />
               </div>
 
-              <div className="w-1/2 pt-16">
+              <div className="w-1/2 ">
                 <StaticImage src="../images/03 About us/Brands/logo-5.png" />
               </div>
             </div>
@@ -232,15 +239,15 @@ const AboutUs = () => {
       </section>
       <section>
         <div>
-          <div className="flex justify-center bg-[#F6F6F6] py-20">
-            <div className="w-1/3">
+          <div className="flex lg:flex-row flex-col justify-center bg-[#F6F6F6] lg:px-20 px-10 py-24 items-center gap-10">
+            <div className="lg:w-1/2 w-full">
               <StaticImage src="../images/03 About us/invest image.png" />
             </div>
-            <div className="flex-col my-5 mx-10">
+            <div className="flex-col lg:w-1/2 w-full ">
               <div className="mb-8 text-4xl font-bold text-primaryDarkBlue ">
                 Invest & Grow With Us
               </div>
-              <div className="text-primaryDarkBlue mt-14 mb-10 max-w-xl">
+              <div className="text-primaryDarkBlue  mb-10 max-w-xl">
                 Invest in your hospitality dream with Kefi and watch it grow
                 into a thriving reality. With our expertise in consultation,
                 investment and operations management, we are committed to
@@ -248,7 +255,7 @@ const AboutUs = () => {
                 to flourish. Join us in creating unforgettable experiences that
                 exude fulfillment, joy, and happiness.
               </div>
-              <div className="flex flex-wrap py-10">
+              <div className="flex flex-wrap ">
                 <div className="px-5 py-3 border-primaryDarkBlue border-2 rounded-lg text-primaryDarkBlue font-semibold font-poppins cursor-pointer hover:bg-primaryDarkBlue duration-200 hover:text-white  flex justify-center ">
                   Learn More
                 </div>
@@ -258,12 +265,12 @@ const AboutUs = () => {
         </div>
       </section>
       <section>
-        <div className="px-32 py-24">
+        <div className="md:px-32 px-10 pt-24 pb-10">
           <div className="felx text-center">
             <div className="text-4xl font-bold text-primaryDarkBlue  pb-10">
               Our global footprint
             </div>
-            <div className="max-w-xl mx-auto mt-14 mb-10">
+            <div className="max-w-xl mx-auto ">
               Lorem ipsum dolor sit amet,{" "}
               <span className="text-primaryLightBlue">UAE region</span>{" "}
               adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -274,39 +281,18 @@ const AboutUs = () => {
         </div>
       </section>
       <section>
-        <div className="">
+        <div className=" mb-24">
           <StaticImage src="../images/03 About us/UAE location-01 1.png" />
         </div>
       </section>
-      <section>
-        <div className="px-80 pb-24">
-          <div className="`flex justify-center items-center px-16 py-16 bg-gray-200/30">
-            <div className="flex justify-between items-end">
-              <div>
-                <div className=" font-extrabold font-poppins mb-8   text-primaryDarkBlue max-w-xl text-4xl">
-                  Tell us about your idea!
-                </div>
-                <div className="max-w-lg">
-                  Get in touch with us today and start your journey towards
-                  constructing a hospitality experience that will be
-                  unforgettable and unique.
-                </div>
-              </div>
-              <div>
-                <div className="flex flex-wrap ">
-                  <div className="px-6 py-4 rounded-lg text-lg text-white bg-primaryDarkBlue font-semibold font-poppins cursor-pointer hover:bg-primaryBlue duration-200 hover:text-white  flex justify-center ">
-                    Contact Us
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section>
+
+      <div className="lg:px-80 px-10 pb-24">
+        <Idea />
+      </div>
+      <section className="mb-10">
         <BackgroundImage {...allImages.coffee} className="realtive">
           <div className=" absolute h-full bg-[#313131]/60 top-0 w-full" />
-          <div className="relative z-20 items-center text-center px-32 py-60 ">
+          <div className="relative z-20 items-center text-center md:px-32 px-10 py-60 ">
             <div className="text-4xl font-bold text-white py-10">
               Join the dream team!
             </div>
