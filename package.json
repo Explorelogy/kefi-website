@@ -11,7 +11,6 @@
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@heroicons/react": "^2.0.18",
     "gatsby": "^5.9.1",
-    "gatsby-background-image": "^1.6.0",
     "gatsby-plugin-image": "^3.9.0",
     "gatsby-plugin-manifest": "^5.9.0",
     "gatsby-plugin-sharp": "^5.9.0",
