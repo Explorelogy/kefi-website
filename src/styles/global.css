@@ -60,3 +60,11 @@ html {
   padding-left: 20rem;
   padding-right: 20rem;
 }
+
+.input-error {
+  color: red;
+  font-size: 12px;
+  font-weight: 300;
+  padding-left: 10px;
+  margin-top: 10px;
+}
