@@ -26,6 +26,11 @@ const AboutUs = () => {
           gatsbyImageData(width: 1920, quality: 100, placeholder: BLURRED)
         }
       }
+      bgflex: file(relativePath: { eq: "03 About us/Kefi-Banner-for-web-05.png" }) {
+        childImageSharp {
+          gatsbyImageData(width: 1920, quality: 100, placeholder: BLURRED)
+        }
+      }
       coffee: file(relativePath: { eq: "03 About us/coffeshop.jpg" }) {
         childImageSharp {
           gatsbyImageData(width: 1920, quality: 100, placeholder: BLURRED)
@@ -56,6 +61,7 @@ const AboutUs = () => {
 
   const allImages = {
     header: convertToBgImage(getImage(data.header)),
+    bgflex: convertToBgImage(getImage(data.bgflex)),
     coffee: convertToBgImage(getImage(data.coffee)),
   }
 
@@ -115,13 +121,63 @@ const AboutUs = () => {
             <div className="py-24 lg:px-32 px-10 gap-10  z-20 relative   flex md:flex-row flex-col justify-center items-center h-full">
               <Fade right>
                 <div className="flex justify-center font-poppins text-5xl text-white font-bold">
-                  About Us
+                  Our story
                 </div>
               </Fade>
             </div>
           </BackgroundImage>
         </div>
       </section>
+
+      {/* our story section */}
+      <section>
+        <div>
+          <BackgroundImage {...allImages.bgflex} className="">
+            <div className="flex lg:flex-row flex-col justify-center  lg:px-32 items-center px-10 py-24  gap-10">
+              <div className="lg:w-1/2 w-full">
+                <div className="flex flex-col  justify-center p-5 ">
+                  <div className="text-xl font-bold text-black">
+                    “WANT TO JOIN US?”
+                  </div>
+                  <div className="mt-4">
+                    Four words spoken to you, an unsuspecting patron dining alone
+                    at a restaurant on an inconspicuous Friday, would be the spark of
+                    something special. The courage to join a group of people you did
+                    not know a few moments earlier pays off and leads to an experience
+                    for the ages. As the night rolls on and you’re with your new friends
+                    dancing the night away, screaming the lyrics to a nostalgic song with
+                    your hands in the air, and surrounded by others who are just as lost
+                    in the moment as you, an epiphany comes
+                  </div>
+                </div>
+              </div>
+
+              <div className="lg:w-1/2 w-full">
+                <div className="flex flex-col justify-center p-5 ">
+                  <div className="font-semibold ">
+                    WHAT IF WE COULD CREATE EXPERIENCES LIKE THESE FOR EVERYONE?
+                  </div>
+                  <div className="mt-4">
+                    This was the seed that grew into a company
+                    whose purpose was to create unique concepts
+                    that brought people together and gave them an
+                    experience they would never forget. We at Kefi
+                    Hospitality Group aim to evoke that same feeling
+                    of euphoria and unbridled joy by designing
+                    hospitality experiences that let you forget reality
+                    for a while, and just enjoy yourself. So, unwind,
+                    dine and celebrate life with us. We’ll make
+                    sure you have an experience you won’t forget.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </BackgroundImage>
+        </div>
+      </section>
+
+      {/* end our stroy section */}
+
       <section>
         <div className="lg:px-32 px-10 py-24">
           <div className="flex justify-center items-center">
@@ -219,6 +275,10 @@ const AboutUs = () => {
               </div>
 
               <div className="w-1/2 ">
+                <StaticImage src="../images/03 About us/Brands/logo-5.png" />
+              </div>
+
+              <div className="w-1/2 ">
                 <StaticImage src="../images/03 About us/Brands/logo-2.png" />
               </div>
 
@@ -229,14 +289,12 @@ const AboutUs = () => {
               <div className="w-1/2 ">
                 <StaticImage src="../images/03 About us/Brands/logo-4.png" />
               </div>
-
-              <div className="w-1/2 ">
-                <StaticImage src="../images/03 About us/Brands/logo-5.png" />
-              </div>
             </div>
           </div>
         </div>
       </section>
+
+
       <section>
         <div>
           <div className="flex lg:flex-row flex-col justify-center bg-[#F6F6F6] lg:px-20 px-10 py-24 items-center gap-10">
@@ -264,7 +322,7 @@ const AboutUs = () => {
           </div>
         </div>
       </section>
-      <section>
+      {/* <section>
         <div className="md:px-32 px-10 pt-24 pb-10">
           <div className="felx text-center">
             <div className="text-4xl font-bold text-primaryDarkBlue  pb-10">
@@ -279,12 +337,12 @@ const AboutUs = () => {
             </div>
           </div>
         </div>
-      </section>
-      <section>
+      </section> */}
+      {/* <section>
         <div className=" mb-24">
           <StaticImage src="../images/03 About us/UAE location-01 1.png" />
         </div>
-      </section>
+      </section> */}
 
       <div className="lg:px-80 px-10 pb-24">
         <Idea />

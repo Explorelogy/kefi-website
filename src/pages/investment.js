@@ -122,7 +122,7 @@ const InvestmentPage = () => {
         <div className="lg:px-32 px-10 py-24 ">
           <div className="flex lg:flex-row flex-col justify-between gap-14">
             <div className="lg:w-1/2 w-full ">
-              <StaticImage src="../images/04 Investment/lifestyle.png" />
+              <StaticImage src="../images/04 Investment/lifestyle.jpg" />
             </div>
             <div className="lg:w-1/2 w-full flex flex-col justify-between">
               <div className="w-1/6 ">

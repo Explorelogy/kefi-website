@@ -23,7 +23,7 @@ const LifestylePage = () => {
           publicURL
         }
       }
-      header: file(relativePath: { eq: "04 Investment/header.jpg" }) {
+      header: file(relativePath: { eq: "07 Lifestyle/Lifestyle-Header.jpg" }) {
         childImageSharp {
           gatsbyImageData(width: 1920, quality: 100, placeholder: BLURRED)
         }

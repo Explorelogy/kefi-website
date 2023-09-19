@@ -3,11 +3,25 @@ import Header from "./header"
 import Footer from "./footer"
 
 const Layout = ({ children }) => {
+
+  console.log(window.location.href,'mala');
+
   return (
     <>
-      <Header />
-      <main>{children}</main>
-      <Footer />
+    
+
+      {window.location.pathname == '/' ? (<>
+        
+        <Header />
+        <main>{children}</main>
+      
+      </>) : (<>
+        <Header />
+        <main>{children}</main>
+          <Footer />
+        </>)
+      }
+      
     </>
   )
 }
