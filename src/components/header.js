@@ -10,13 +10,13 @@ const Header = () => {
 
   const header = [
     {
-      name: "About Us",
+      name: "Our Story",
       link: "/about-us",
     },
-    {
-      name: "Careers",
-      link: "",
-    },
+    // {
+    //   name: "Careers",
+    //   link: "",
+    // },
     {
       name: "Invest",
       link: "/investment",

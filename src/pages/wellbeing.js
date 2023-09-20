@@ -25,7 +25,7 @@ const WellbeingPage = () => {
       }
       header: file(
         relativePath: {
-          eq: "08 Well-being/219_webedia-articles_fed_783_ac3115cd9f9d738a81a407eb7d_1551588-posez-vos-mains-sous-votre-nombril-et-ex-orig-1.jpeg"
+          eq: "08 Well-being/Wellbeing-Header.jpg"
         }
       ) {
         childImageSharp {
@@ -152,7 +152,7 @@ const WellbeingPage = () => {
               </Fade>
               <Fade right>
                 <div className="flex justify-center font-poppins text-5xl text-white font-bold">
-                  Well being
+                  Wellbeing
                 </div>
               </Fade>
             </div>

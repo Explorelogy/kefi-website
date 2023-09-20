@@ -200,10 +200,12 @@ const DistributionPage = () => {
 
       <section>
         <div
-          className="overflow-x-scroll md:ml-24 ml-10 scrollbar-hide mt-16"
+          // className="overflow-x-scroll md:ml-24 ml-10 scrollbar-hide mt-16"
+          className="overflow-x-scroll  scrollbar-hide"
           onScroll={event => updateScrollPercentage(event)}
         >
-          <div className="grid grid-cols-14 relative gap-5 md:w-[2700px] w-[1800px]">
+          <StaticImage src="../images/05 Distribution/KefiDistributionBanner-02.png" />
+          {/* <div className="grid grid-cols-14 relative gap-5 md:w-[2700px] w-[1800px]">
             {masonry.map((item, index) => {
               return (
                 <Zoom>
@@ -221,9 +223,9 @@ const DistributionPage = () => {
                 </Zoom>
               )
             })}
-          </div>
+          </div> */}
         </div>
-        <Zoom>
+        {/* <Zoom>
           <div className="pagination flex justify-center items-center mt-10 gap-2 ">
             <span className="dot"></span>
             <span className="dot"></span>
@@ -232,7 +234,7 @@ const DistributionPage = () => {
             <span className="dot"></span>
             <span className="dot"></span>
           </div>
-        </Zoom>
+        </Zoom> */}
       </section>
       <section>
         <Zoom>
@@ -243,8 +245,11 @@ const DistributionPage = () => {
       </section>
 
       <section>
-        <div className="md:px-32 px-10  py-24 bg-[#877465] my-10">
-          <div className="text-center">
+        <div
+          // className="md:px-32 px-10  py-24 bg-[#877465] my-10"
+          className="md:px-32 px-10  py-24  my-10"
+        >
+          {/* <div className="text-center">
             <div className=" font-extrabold font-poppins  text-white text-4xl">
               Distribution Brands
             </div>
@@ -253,8 +258,8 @@ const DistributionPage = () => {
               most innovative companies in the region to provide pioneering
               solutions that redefine what true hospitality is.
             </div>
-          </div>
-          <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 lg:gap-y-0 md:gap-y-14 sm:gap-y-20 gap-10  items-center h-full ">
+          </div> */}
+          {/* <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 lg:gap-y-0 md:gap-y-14 sm:gap-y-20 gap-10  items-center h-full ">
             {logos.map((item, index) => {
               return (
                 <div className="md:w-1/2 w-1/3 mx-auto ">
@@ -268,7 +273,8 @@ const DistributionPage = () => {
                 </div>
               )
             })}
-          </div>
+          </div> */}
+          <StaticImage src="../images/05 Distribution/KefiDistributionBanner-02.png" />
         </div>
       </section>
     </Layout>

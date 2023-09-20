@@ -23,7 +23,7 @@ const FoodAndBeveragePage = () => {
           publicURL
         }
       }
-      header: file(relativePath: { eq: "04 Investment/header.jpg" }) {
+      header: file(relativePath: { eq: "11 Food & Beverage/header.jpg" }) {
         childImageSharp {
           gatsbyImageData(width: 1920, quality: 100, placeholder: BLURRED)
         }
