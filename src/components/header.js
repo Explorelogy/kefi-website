@@ -39,7 +39,7 @@ const Header = () => {
     },
     {
       name: "Contact Us",
-      link: "",
+      link: "/contact-us",
     },
   ]
 
