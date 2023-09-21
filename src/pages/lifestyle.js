@@ -156,7 +156,7 @@ const LifestylePage = () => {
 
       <section>
         <div className="bg-gray-200/30 py-24 md:px-32 px-10">
-          <div className="flex md:flex-row flex-col justify-center gap-5 items-center text-primaryDarkBlue md:text-left text-center">
+          <div className="flex md:flex-row flex-col justify-center gap-10 items-center text-primaryDarkBlue md:text-left text-center">
             <Fade>
               <div className=" font-poppins text-4xl  font-bold max-w-xs leading-snug ">
                 Learn about lifestyle

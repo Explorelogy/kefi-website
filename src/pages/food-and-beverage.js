@@ -146,7 +146,7 @@ const FoodAndBeveragePage = () => {
               </Fade>
               <Fade right>
                 <div className="flex justify-center font-poppins text-5xl text-white font-bold">
-                Food & Beverage
+                  Food & Beverage
                 </div>
               </Fade>
             </div>
@@ -156,16 +156,21 @@ const FoodAndBeveragePage = () => {
 
       <section>
         <div className="bg-gray-200/30 py-24 md:px-32 px-10">
-          <div className="flex md:flex-row flex-col justify-center gap-5 items-center text-primaryDarkBlue md:text-left text-center">
+          <div className="flex md:flex-row flex-col justify-center gap-10 items-center text-primaryDarkBlue md:text-left text-center">
             <Fade left>
               <div className=" font-poppins text-4xl  font-bold max-w-xs leading-snug ">
-              Learn about 
-Food & Beverage
+                Learn about Food & Beverage
               </div>
             </Fade>
             <Fade right>
               <div className="max-w-xl">
-              At Kefi, we believe that food and drinks are not just about nourishment, but also about creating unforgettable experiences. Our team of experts develops innovative ideas that blend delicious flavours with a relaxing atmosphere to deliver exceptional culinary experiences. Discover how our passion for food and beverages can help you bring your own unique vision to life.
+                At Kefi, we believe that food and drinks are not just about
+                nourishment, but also about creating unforgettable experiences.
+                Our team of experts develops innovative ideas that blend
+                delicious flavours with a relaxing atmosphere to deliver
+                exceptional culinary experiences. Discover how our passion for
+                food and beverages can help you bring your own unique vision to
+                life.
               </div>
             </Fade>
           </div>
