@@ -26,7 +26,9 @@ const AboutUs = () => {
           gatsbyImageData(width: 1920, quality: 100, placeholder: BLURRED)
         }
       }
-      bgflex: file(relativePath: { eq: "03 About us/Kefi-Banner-for-web-05.png" }) {
+      bgflex: file(
+        relativePath: { eq: "03 About us/Kefi-Banner-for-web-05.png" }
+      ) {
         childImageSharp {
           gatsbyImageData(width: 1920, quality: 100, placeholder: BLURRED)
         }
@@ -140,14 +142,15 @@ const AboutUs = () => {
                     “WANT TO JOIN US?”
                   </div>
                   <div className="mt-4">
-                    Four words spoken to you, an unsuspecting patron dining alone
-                    at a restaurant on an inconspicuous Friday, would be the spark of
-                    something special. The courage to join a group of people you did
-                    not know a few moments earlier pays off and leads to an experience
-                    for the ages. As the night rolls on and you’re with your new friends
-                    dancing the night away, screaming the lyrics to a nostalgic song with
-                    your hands in the air, and surrounded by others who are just as lost
-                    in the moment as you, an epiphany comes
+                    Four words spoken to you, an unsuspecting patron dining
+                    alone at a restaurant on an inconspicuous Friday, would be
+                    the spark of something special. The courage to join a group
+                    of people you did not know a few moments earlier pays off
+                    and leads to an experience for the ages. As the night rolls
+                    on and you’re with your new friends dancing the night away,
+                    screaming the lyrics to a nostalgic song with your hands in
+                    the air, and surrounded by others who are just as lost in
+                    the moment as you, an epiphany comes
                   </div>
                 </div>
               </div>
@@ -158,16 +161,14 @@ const AboutUs = () => {
                     WHAT IF WE COULD CREATE EXPERIENCES LIKE THESE FOR EVERYONE?
                   </div>
                   <div className="mt-4">
-                    This was the seed that grew into a company
-                    whose purpose was to create unique concepts
-                    that brought people together and gave them an
-                    experience they would never forget. We at Kefi
-                    Hospitality Group aim to evoke that same feeling
-                    of euphoria and unbridled joy by designing
-                    hospitality experiences that let you forget reality
-                    for a while, and just enjoy yourself. So, unwind,
-                    dine and celebrate life with us. We’ll make
-                    sure you have an experience you won’t forget.
+                    This was the seed that grew into a company whose purpose was
+                    to create unique concepts that brought people together and
+                    gave them an experience they would never forget. We at Kefi
+                    Hospitality Group aim to evoke that same feeling of euphoria
+                    and unbridled joy by designing hospitality experiences that
+                    let you forget reality for a while, and just enjoy yourself.
+                    So, unwind, dine and celebrate life with us. We’ll make sure
+                    you have an experience you won’t forget.
                   </div>
                 </div>
               </div>
@@ -277,13 +278,12 @@ const AboutUs = () => {
               <div className="w-1/2 ">
                 <StaticImage src="../images/03 About us/Brands/logo-5.png" />
               </div>
-
               <div className="w-1/2 ">
-                <StaticImage src="../images/03 About us/Brands/logo-2.png" />
+                <StaticImage src="../images/03 About us/Brands/logo-3.png" />
               </div>
 
               <div className="w-1/2 ">
-                <StaticImage src="../images/03 About us/Brands/logo-3.png" />
+                <StaticImage src="../images/03 About us/Brands/logo-2.png" />
               </div>
 
               <div className="w-1/2 ">
@@ -293,7 +293,6 @@ const AboutUs = () => {
           </div>
         </div>
       </section>
-
 
       <section>
         <div>
@@ -344,7 +343,7 @@ const AboutUs = () => {
         </div>
       </section> */}
 
-      <div className="lg:px-80 px-10 pb-24">
+      <div className="lg:px-80  px-10 pt-24 pb-24">
         <Idea />
       </div>
       <section className="mb-10">

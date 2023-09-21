@@ -98,79 +98,95 @@ export default class Contact extends React.Component {
         <section>
           <div className="px-32 py-24">
             <div className="flex justify-center items-center">
-              <div className="flex gap-20 justify-center">
-                {" "}
-                <div className="w-2/4">
-                  <div className="w-1/5">
-                    <StaticImage
-                      src="../images/09 Contact/Kefi_Logo_icon.png"
-                      className="w-96 "
-                    />
-                  </div>
-
-                  <div className=" font-extrabold font-poppins mb-8 mt-8   text-primaryDarkBlue max-w-xl text-4xl leading-normal">
-                    Connect With Us
-                  </div>
-
-                  <div>
-                    <div className=" text-primaryDarkBlue text-lg">
-                      We love hearing new ideas and receiving new challenges, so
-                      get in touch with us today! If you want to build a
-                      hospitality concept that will leave a lasting impression
-                      and stand out from the rest, let's work together to create
-                      something truly magical.
+              <div className="flex xl:flex-row flex-col items-center  gap-32 justify-center container">
+                <div className="flex   items-center justify-center">
+                  <div className="items-center justify-center">
+                    <div className="w-1/5 ">
+                      <StaticImage
+                        src="../images/09 Contact/Kefi_Logo_icon.png"
+                        className=" "
+                      />
                     </div>
 
-                    <div className=" flex flex-row gap-4 mt-10">
-                      <div className="flex gap-4">
-                        <div className=" w-16 h-16 bg-primaryDarkBlue">
-                          <div>
-                            <StaticImage
-                              src="../images/09 Contact/icon.png"
-                              className="w-8 h-8 top-4 left-4"
-                            />
-                          </div>
-                        </div>
+                    <div className=" font-extrabold font-poppins mb-8 mt-10   text-primaryDarkBlue  text-4xl leading-normal">
+                      Connect With Us
+                    </div>
 
-                        <div className="flex j flex-col justify-items-center ">
-                          <div className="text-base font-poppins leading-6 font-bold align-top">
-                            Call us
-                          </div>
-                          <div className=" font-montserrat font-normal text-lg align-top">
-                            +971&nbsp;55&nbsp;318&nbsp;8676
-                          </div>
-                        </div>
+                    <div>
+                      <div className=" text-primaryDarkBlue max-w-xl text-lg">
+                        We love hearing new ideas and receiving new challenges,
+                        so get in touch with us today! If you want to build a
+                        hospitality concept that will leave a lasting impression
+                        and stand out from the rest, let's work together to
+                        create something truly magical.
                       </div>
 
-                      <div className="flex gap-6 ">
-                        <div className=" w-16 h-16 bg-primaryDarkBlue">
+                      <div className=" flex flex-col xl:flex-row gap-4 mt-10">
+                        <div className="flex  gap-4">
+                          <div className="">
+                            <StaticImage
+                              src="../images/09 Contact/icon.png"
+                              className="w-14 "
+                            />
+                          </div>
+
+                          <div className="flex  flex-col justify-items-center ">
+                            <div className="text-base font-poppins leading-6 font-bold align-top">
+                              Call us
+                            </div>
+                            <div className=" font-montserrat font-normal text-lg align-top">
+                              +971 (0)4 852 5705
+                            </div>
+                          </div>
+                        </div>
+
+                        <div className="flex gap-6 ">
                           <div>
                             <StaticImage
                               src="../images/09 Contact/Group.png"
-                              className="w-8 h-8 top-4 left-4"
+                              className="w-14 "
                             />
                           </div>
+
+                          <div className="flex j flex-col justify-items-center">
+                            <div className="text-base font-poppins leading-6 font-bold align-top">
+                              Emal us
+                            </div>
+                            <div className=" font-montserrat font-normal text-lg align-top">
+                              info@kefihospitalitygroup.com
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="flex gap-6 mt-8 ">
+                        <div>
+                          <StaticImage
+                            src="../images/09 Contact/Groupp.png"
+                            className="w-14 "
+                          />
                         </div>
 
                         <div className="flex j flex-col justify-items-center">
                           <div className="text-base font-poppins leading-6 font-bold align-top">
-                            Emal us
+                            Address
                           </div>
                           <div className=" font-montserrat font-normal text-lg align-top">
-                            info@kefihospitalitygroup.com
+                            Kefi Hospitality Group. Plot number: 598-1096 Street
+                            Number 51, Dubai Investment Park Dubai, UAE PO Box
+                            191869
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div className="flex flex-row items-center justify-center">
-                  <div>
-                    <div className=" max-w-xl mb-10 mx-auto font-poppins font-extrabold text-4xl text-primaryDarkBlue">
-                      Drop a Message
+                <div className="flex  flex-row items-center justify-center">
+                  <div className="w-96 ">
+                    <div className="  mx-auto font-poppins font-extrabold text-4xl text-primaryDarkBlue">
+                      Drop A Message
                     </div>
                     <form action="" onSubmit={this.onSubmit}>
-                      <div>
+                      <div className="mt-8">
                         <div className="font-montserrat text-lg text-primaryDarkBlue">
                           Enter Your Name
                         </div>
@@ -198,7 +214,7 @@ export default class Contact extends React.Component {
                         ) : null}
                       </div>
 
-                      <div className="mt-8">
+                      <div className="mt-6">
                         <div className="font-montserrat text-lg text-primaryDarkBlue">
                           Enter Email
                         </div>
@@ -226,7 +242,7 @@ export default class Contact extends React.Component {
                         ) : null}
                       </div>
 
-                      <div className="mt-8">
+                      <div className="mt-6">
                         <div className="font-montserrat text-lg text-primaryDarkBlue">
                           Enter Your Message
                         </div>
@@ -242,9 +258,14 @@ export default class Contact extends React.Component {
                         </div>
                       </div>
 
-                      <div className=" mt-8 ">
+                      <div className=" mt-6 ">
                         <div>
-                          <button className=" px-40 py-4 rounded-lg text-lg text-white bg-primaryDarkBlue font-semibold font-poppins cursor-pointer hover:bg-primaryBlue duration-200 hover:text-white " type="submit">Submit</button>
+                          <button
+                            className=" w-1/2 py-4 px-2 rounded-lg text-xl text-white bg-primaryDarkBlue font-semibold font-poppins cursor-pointer hover:bg-primaryBlue duration-200 hover:text-white "
+                            type="submit"
+                          >
+                            Submit Message
+                          </button>
                         </div>
                       </div>
                     </form>

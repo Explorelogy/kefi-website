@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 
 const Idea = () => {
   return (
@@ -15,11 +16,13 @@ const Idea = () => {
           </div>
         </div>
         <div>
-          <div className="flex flex-wrap lg:mt-0 mt-6  ">
-            <div className="px-6 py-4 rounded-lg text-lg text-white bg-primaryDarkBlue font-semibold font-poppins cursor-pointer hover:bg-primaryBlue duration-200 hover:text-white  flex justify-center ">
-              Contact Us
+          <Link to="/contact-us">
+            <div className="flex flex-wrap lg:mt-0 mt-6  ">
+              <div className="px-6 py-4 rounded-lg text-lg text-white bg-primaryDarkBlue font-semibold font-poppins cursor-pointer hover:bg-primaryBlue duration-200 hover:text-white  flex justify-center ">
+                Contact Us
+              </div>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
     </div>

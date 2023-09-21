@@ -9,6 +9,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Button from "./elements/button"
 import { Fade } from "react-reveal"
+import { Link } from "gatsby"
 
 const Footer = () => {
   const icons = [
@@ -21,7 +22,7 @@ const Footer = () => {
   return (
     <div>
       <Fade bottom>
-        <div className="flex justify-center items-center pb-8">
+        <div className="flex justify-center items-center pt-10 pb-8">
           <StaticImage
             src="../images/01 Navbar and Footer/Kefi web logo blue.png"
             width={170}
@@ -32,9 +33,11 @@ const Footer = () => {
       <div className="px-20 ">
         <div className="flex md:flex-row flex-col  justify-between items-center">
           <Fade bottom>
-            <div className="text-sm font-semibold text-primaryDarkBlue cursor-pointer md:mb-0 mb-6">
-              contact us
-            </div>
+            <Link to="/contact-us">
+              <div className="text-sm font-semibold text-primaryDarkBlue cursor-pointer md:mb-0 mb-6">
+                contact us
+              </div>
+            </Link>
             <div>
               <div className="flex md:flex-row flex-col justify-between items-center gap-5 ">
                 {icons.map((item, index) => (

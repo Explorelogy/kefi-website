@@ -149,6 +149,7 @@ const DistributionPage = () => {
       span: "col-span-3 row-span-0",
     },
   ]
+  const newLocal = <StaticImage src="../images/05 Distribution/KefiDistributionBanner-02.png" />
   return (
     <Layout>
       <section>
@@ -245,10 +246,10 @@ const DistributionPage = () => {
       </section>
 
       <section>
-        <div
+        {/* <div
           // className="md:px-32 px-10  py-24 bg-[#877465] my-10"
-          className="md:px-32 px-10  py-24  my-10"
-        >
+          className="md:px-32 px-10  py-24  my-10" */}
+        {/* > */}
           {/* <div className="text-center">
             <div className=" font-extrabold font-poppins  text-white text-4xl">
               Distribution Brands
@@ -274,8 +275,8 @@ const DistributionPage = () => {
               )
             })}
           </div> */}
-          <StaticImage src="../images/05 Distribution/KefiDistributionBanner-02.png" />
-        </div>
+{/*          
+        </div> */}
       </section>
     </Layout>
   )

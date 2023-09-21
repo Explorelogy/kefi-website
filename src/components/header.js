@@ -26,13 +26,14 @@ const Header = () => {
       link: "/distribution",
     },
     {
-      name: "Food & Beverage",
-      link: "/food-and-beverage",
-    },
-    {
       name: "Lifestyle",
       link: "/lifestyle",
     },
+    {
+      name: "Food & Beverage",
+      link: "/food-and-beverage",
+    },
+
     {
       name: "Wellbeing",
       link: "/wellbeing",
@@ -51,10 +52,12 @@ const Header = () => {
             <div className="fixed ">
               <Fade top duration={1000}>
                 <div className="md:w-1/2 w-1/3">
-                  <StaticImage
-                    src="../images/01 Navbar and Footer/Kefi logo white.png"
-                    className="w-full"
-                  />
+                  <Link to="/">
+                    <StaticImage
+                      src="../images/01 Navbar and Footer/Kefi logo white.png"
+                      className="w-full"
+                    />
+                  </Link>
                 </div>
               </Fade>
             </div>
@@ -74,7 +77,7 @@ const Header = () => {
         </div>
       </div>
       <div
-        className={`fixed h-full right-0 top-0 bg-primaryDarkBlue/70 backdrop-blur-md duration-300 z-20 ${
+        className={`fixed h-full right-0 top-0 bg-primaryDarkBlue/70 backdrop-blur-md duration-300 z-30 ${
           isSideBarOpen
             ? "sm:w-96 w-full  "
             : "w-0 opacity-0 duration-300 overflow-hidden"

@@ -8,20 +8,13 @@ const Layout = ({ children }) => {
 
   return (
     <>
-    
-
-      {window.location.pathname == '/' ? (<>
-        
         <Header />
         <main>{children}</main>
-      
-      </>) : (<>
-        <Header />
-        <main>{children}</main>
+        {window.location.pathname == '/' ? (
+          <></>
+        ):(
           <Footer />
-        </>)
-      }
-      
+        )}
     </>
   )
 }

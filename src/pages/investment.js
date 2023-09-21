@@ -8,6 +8,7 @@ import { convertToBgImage } from "gbimage-bridge"
 import Button from "../components/elements/button"
 import Idea from "../components/idea"
 
+
 const InvestmentPage = () => {
   const data = useStaticQuery(graphql`
     query {
