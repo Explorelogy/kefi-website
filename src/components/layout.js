@@ -1,16 +1,17 @@
 import React from "react"
+import { useLocation } from "@reach/router"
 import Header from "./header"
 import Footer from "./footer"
 
 const Layout = ({ children }) => {
 
-  console.log(window.location.href,'mala');
+  const location = useLocation();
 
   return (
     <>
         <Header />
         <main>{children}</main>
-        {window.location.pathname == '/' ? (
+        {location.pathname == '/' ? (
           <></>
         ):(
           <Footer />
