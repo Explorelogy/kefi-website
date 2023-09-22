@@ -153,7 +153,7 @@ export default class Contact extends React.Component {
                               Emal us
                             </div>
                             <div className=" font-montserrat font-normal text-lg align-top">
-                              info@kefihospitalitygroup.com
+                              info@kefi-hospitality.com
                             </div>
                           </div>
                         </div>
@@ -171,9 +171,13 @@ export default class Contact extends React.Component {
                             Address
                           </div>
                           <div className=" font-montserrat font-normal text-lg align-top">
-                            Kefi Hospitality Group. Plot number: 598-1096 Street
-                            Number 51, Dubai Investment Park Dubai, UAE PO Box
-                            191869
+                            <div> Kefi Hospitality Group. </div>
+                            <div>
+                              {" "}
+                              Plot number: 598-1096 Street Number 51,
+                            </div>{" "}
+                            <div>Dubai Investment Park Dubai, </div>
+                            <div>UAE PO Box 191869.</div>
                           </div>
                         </div>
                       </div>
