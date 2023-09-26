@@ -23,12 +23,18 @@ const DistributionPage = () => {
           publicURL
         }
       }
-      header: file(relativePath: { eq: "05 Distribution/empty-warehouse-in-logistic-center-warehouse-for-s-2022-12-16-11-54-11-utc.jpg" }) {
+      header: file(
+        relativePath: {
+          eq: "05 Distribution/empty-warehouse-in-logistic-center-warehouse-for-s-2022-12-16-11-54-11-utc.jpg"
+        }
+      ) {
         childImageSharp {
           gatsbyImageData(width: 1920, quality: 100, placeholder: BLURRED)
         }
       }
-      lifestyle: file(relativePath: { eq: "05 Distribution/Distribution icon.png" }) {
+      lifestyle: file(
+        relativePath: { eq: "05 Distribution/Distribution icon.png" }
+      ) {
         childImageSharp {
           gatsbyImageData(width: 1920, quality: 100, placeholder: BLURRED)
         }
@@ -149,7 +155,9 @@ const DistributionPage = () => {
       span: "col-span-3 row-span-0",
     },
   ]
-  const newLocal = <StaticImage src="../images/05 Distribution/KefiDistributionBanner-02.png" />
+  const newLocal = (
+    <StaticImage src="../images/05 Distribution/KefiDistributionBanner-02.png" />
+  )
   return (
     <Layout>
       <section>
@@ -168,7 +176,7 @@ const DistributionPage = () => {
               </Fade>
               <Fade right>
                 <div className="flex justify-center font-poppins text-5xl text-white font-bold">
-                Distribution
+                  Distribution
                 </div>
               </Fade>
             </div>
@@ -205,7 +213,9 @@ const DistributionPage = () => {
           className="overflow-x-scroll  scrollbar-hide"
           onScroll={event => updateScrollPercentage(event)}
         >
-          <StaticImage src="../images/05 Distribution/KefiDistributionBanner-02.png" />
+          <div className="flex pt-20 justify-center">
+            <StaticImage src="../images/05 Distribution/KefiDistributionBanner-02.png" />
+          </div>
           {/* <div className="grid grid-cols-14 relative gap-5 md:w-[2700px] w-[1800px]">
             {masonry.map((item, index) => {
               return (
@@ -250,7 +260,7 @@ const DistributionPage = () => {
           // className="md:px-32 px-10  py-24 bg-[#877465] my-10"
           className="md:px-32 px-10  py-24  my-10" */}
         {/* > */}
-          {/* <div className="text-center">
+        {/* <div className="text-center">
             <div className=" font-extrabold font-poppins  text-white text-4xl">
               Distribution Brands
             </div>
@@ -260,7 +270,7 @@ const DistributionPage = () => {
               solutions that redefine what true hospitality is.
             </div>
           </div> */}
-          {/* <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 lg:gap-y-0 md:gap-y-14 sm:gap-y-20 gap-10  items-center h-full ">
+        {/* <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 lg:gap-y-0 md:gap-y-14 sm:gap-y-20 gap-10  items-center h-full ">
             {logos.map((item, index) => {
               return (
                 <div className="md:w-1/2 w-1/3 mx-auto ">
@@ -275,7 +285,7 @@ const DistributionPage = () => {
               )
             })}
           </div> */}
-{/*          
+        {/*          
         </div> */}
       </section>
     </Layout>

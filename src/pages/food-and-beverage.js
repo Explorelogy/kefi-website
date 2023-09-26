@@ -178,7 +178,10 @@ const FoodAndBeveragePage = () => {
       </section>
 
       <section>
-        <div
+      <div className="flex pt-20 justify-center">
+            <StaticImage src="../images/11 Food & Beverage/KefiFBBanner-02.png" />
+          </div>
+        {/* <div
           className="overflow-x-scroll md:ml-24 ml-10 scrollbar-hide mt-16"
           onScroll={event => updateScrollPercentage(event)}
         >
@@ -211,7 +214,7 @@ const FoodAndBeveragePage = () => {
             <span className="dot"></span>
             <span className="dot"></span>
           </div>
-        </Zoom>
+        </Zoom> */}
       </section>
       <section>
         <Zoom>

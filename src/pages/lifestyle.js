@@ -86,19 +86,19 @@ const LifestylePage = () => {
       span: "col-span-3 row-span-0",
     },
     {
-      image: "Gallery item",
+      image: "Gallery item_5",
       colspan: 2,
       rowspan: 2,
       span: "col-span-2 row-span-2",
     },
     {
-      image: "Gallery item-1",
+      image: "Gallery item-6",
       colspan: 2,
       rowspan: 0,
       span: "col-span-2 row-span-0",
     },
     {
-      image: "Gallery item-2",
+      image: "Gallery item-7",
       colspan: 3,
       rowspan: 0,
       span: "col-span-3 row-span-0",
@@ -116,17 +116,18 @@ const LifestylePage = () => {
       span: "col-span-3 row-span-0",
     },
     {
-      image: "image",
+      image: "image_1",
       colspan: 2,
       rowspan: 0,
       span: "col-span-2 row-span-0",
     },
     {
-      image: "Gallery item-3",
+      image: "Gallery item-8",
       colspan: 3,
       rowspan: 0,
       span: "col-span-3 row-span-0",
     },
+
   ]
   return (
     <Layout>
