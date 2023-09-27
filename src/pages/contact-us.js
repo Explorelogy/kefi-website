@@ -150,7 +150,7 @@ export default class Contact extends React.Component {
 
                           <div className="flex j flex-col justify-items-center">
                             <div className="text-base font-poppins leading-6 font-bold align-top">
-                              Emal us
+                              Email us
                             </div>
                             <div className=" font-montserrat font-normal text-lg align-top">
                               info@kefi-hospitality.com
@@ -176,8 +176,8 @@ export default class Contact extends React.Component {
                               {" "}
                               Plot number: 598-1096 Street Number 51,
                             </div>{" "}
-                            <div>Dubai Investment Park Dubai, </div>
-                            <div>UAE PO Box 191869.</div>
+                            <div>Dubai Investment Park Dubai,UAE  </div>
+                            <div>PO Box 191869.</div>
                           </div>
                         </div>
                       </div>

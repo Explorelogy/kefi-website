@@ -57,7 +57,7 @@ const InvestmentPage = () => {
       link: "",
     },
     {
-      name: "Food & Beverages",
+      name: "Food & Beverage",
       icon: "Asset 5",
       desc: "We concoct unique concepts that bring the best food and drinks to its visitors along with a relaxing atmosphere, resulting in unforgettable culinary experiences. Unwind in style with exquisite flavours and a memorable ambience.",
       link: "",

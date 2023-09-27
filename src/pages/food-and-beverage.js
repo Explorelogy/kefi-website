@@ -159,7 +159,7 @@ const FoodAndBeveragePage = () => {
           <div className="flex md:flex-row flex-col justify-center gap-10 items-center text-primaryDarkBlue md:text-left text-center">
             <Fade left>
               <div className=" font-poppins text-4xl  font-bold max-w-xs leading-snug ">
-                Learn about Food & Beverage
+                Learn about<br/> Food & Beverage
               </div>
             </Fade>
             <Fade right>
@@ -178,8 +178,8 @@ const FoodAndBeveragePage = () => {
       </section>
 
       <section>
-      <div className="flex pt-20 justify-center">
-            <StaticImage src="../images/11 Food & Beverage/KefiFBBanner-02.png" />
+      <div className="flex  justify-center">
+            <StaticImage src="../images/11 Food & Beverage/F&B-Image.png" />
           </div>
         {/* <div
           className="overflow-x-scroll md:ml-24 ml-10 scrollbar-hide mt-16"

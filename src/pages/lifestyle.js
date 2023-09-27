@@ -47,6 +47,8 @@ const LifestylePage = () => {
       (scrollSection.scrollLeft /
         (scrollSection.scrollWidth - scrollSection.clientWidth)) *
       100
+      console.log(scrollPercentage);
+
 
     // Update pagination dots based on scroll percentage
     var dots = document.getElementsByClassName("dot")
@@ -160,7 +162,7 @@ const LifestylePage = () => {
           <div className="flex md:flex-row flex-col justify-center gap-10 items-center text-primaryDarkBlue md:text-left text-center">
             <Fade>
               <div className=" font-poppins text-4xl  font-bold max-w-xs leading-snug ">
-                Learn about lifestyle
+                Learn about Lifestyle
               </div>
             </Fade>
             <Fade>
@@ -207,10 +209,7 @@ const LifestylePage = () => {
           <div className="pagination flex justify-center items-center mt-10 gap-2 ">
             <span className="dot"></span>
             <span className="dot"></span>
-            <span className="dot"></span>
-            <span className="dot"></span>
-            <span className="dot"></span>
-            <span className="dot"></span>
+           
           </div>
         </Zoom>
       </section>
