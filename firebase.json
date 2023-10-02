@@ -1,6 +1,7 @@
 {
   "hosting": {
     "public": "public",
+    "site": "kefi-hospitality",
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
     
   }
