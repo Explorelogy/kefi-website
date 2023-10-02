@@ -249,7 +249,7 @@ const AboutUs = () => {
                 {cdata.map((item, index) => {
                   return (
                     <div key={index} className="flex mb-6 items-center">
-                      <div className="bg-primaryDarkBlue rounded-full w-3 h-3 flex-shrink-0"></div>
+                      <div className=" flex justify-center "><StaticImage className="sm:w-6 w-4" src="../images/03 About us/Kefi-ICon.png" /></div>
                       <div className="px-5">{item.name}</div>
                     </div>
                   )
