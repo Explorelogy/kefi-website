@@ -21,7 +21,7 @@ const AboutUs = () => {
         }
       }
 
-      header: file(relativePath: { eq: "03 About us/About Us - Header.png" }) {
+      header: file(relativePath: { eq: "03 About us/aboutusheader.png" }) {
         childImageSharp {
           gatsbyImageData(width: 1920, quality: 100, placeholder: BLURRED)
         }
