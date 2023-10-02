@@ -165,7 +165,7 @@ const WellbeingPage = () => {
           <div className="flex md:flex-row flex-col justify-center gap-10  items-center text-primaryDarkBlue md:text-left text-center">
             <Fade left>
               <div className=" font-poppins text-4xl  font-bold max-w-xs leading-snug ">
-                Learn about Well being
+                Learn about<br/> Well being
               </div>
             </Fade>
             <Fade right>

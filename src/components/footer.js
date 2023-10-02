@@ -21,23 +21,32 @@ const Footer = () => {
 
   return (
     <div>
-      <Fade bottom>
-        <div className="flex justify-center items-center pt-10 pb-8">
+      {/* <Fade bottom>
+        <div className="flex justify-center items-center  pt-10">
           <StaticImage
-            src="../images/01 Navbar and Footer/Kefi web logo blue.png"
-            width={170}
+            src="../images/09 Contact/Kefi_Logo_icon.png"
+            width={100}
+            className=""
           />
         </div>
-      </Fade>
-      <div className="h-[1px] bg-black/20 mb-8"></div>
+      </Fade> */}
+      {/* <div className="h-[1px] bg-black/20 mb-8"></div> */}
       <div className="px-20 ">
         <div className="flex md:flex-row flex-col  justify-between items-center">
           <Fade bottom>
             <Link to="/contact-us">
-              <div className="text-sm font-semibold text-primaryDarkBlue cursor-pointer md:mb-0 mb-6">
-                contact us
+              <div className="text-sm font-extrabold text-primaryDarkBlue cursor-pointer md:mb-0 mb-6">
+                Contact us
               </div>
             </Link>
+            <div>
+            <div className="flex md:flex-row flex-col lg:ml-64 justify-center items-center ">
+               <StaticImage
+                  src="../images/09 Contact/Kefi_Logo_icon.png"
+                  width={50}
+                  className="" />
+                </div>
+            </div>
             <div>
               <div className="flex md:flex-row flex-col justify-between items-center gap-5 ">
                 {icons.map((item, index) => (

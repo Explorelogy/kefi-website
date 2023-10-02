@@ -213,7 +213,7 @@ const DistributionPage = () => {
           className="overflow-x-scroll  scrollbar-hide"
           onScroll={event => updateScrollPercentage(event)}
         >
-          <div className="flex pt-20 justify-center">
+          <div className="flex  justify-center">
             <StaticImage src="../images/05 Distribution/KefiDistributionBanner-02.png" />
           </div>
           {/* <div className="grid grid-cols-14 relative gap-5 md:w-[2700px] w-[1800px]">
