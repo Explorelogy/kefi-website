@@ -47,8 +47,7 @@ const LifestylePage = () => {
       (scrollSection.scrollLeft /
         (scrollSection.scrollWidth - scrollSection.clientWidth)) *
       100
-      console.log(scrollPercentage);
-
+   
 
     // Update pagination dots based on scroll percentage
     var dots = document.getElementsByClassName("dot")

@@ -21,7 +21,7 @@ const AboutUs = () => {
         }
       }
 
-      header: file(relativePath: { eq: "03 About us/AboutUsHeader.jpg" }) {
+      header: file(relativePath: { eq: "03 About us/About Us - Header.png" }) {
         childImageSharp {
           gatsbyImageData(width: 1920, quality: 100, placeholder: BLURRED)
         }
@@ -118,7 +118,7 @@ const AboutUs = () => {
     <Layout>
       <section>
         <div className="relative h-full">
-          <BackgroundImage {...allImages.header} className="bg-right-top py-16">
+          <BackgroundImage {...allImages.header} className="bg-right-top py-8">
             <div className="bg-[#171A40]/60 absolute top-0 w-full h-full z-10" />
             <div className="py-24 lg:px-32 px-10 gap-10  z-20 relative   flex md:flex-row flex-col justify-center items-center h-full">
               <Fade right>

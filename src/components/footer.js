@@ -40,7 +40,7 @@ const Footer = () => {
               </div>
             </Link>
             <div>
-            <div className="flex md:flex-row flex-col ml-20 ">
+            <div className="flex md:flex-row flex-col lg:ml-64 justify-center items-center ">
                <StaticImage
                   src="../images/09 Contact/Kefi_Logo_icon.png"
                   width={50}
