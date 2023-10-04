@@ -131,9 +131,7 @@ const AboutUs = () => {
             <div className="flex lg:flex-row  z-20 relative flex-col justify-center  lg:px-32 items-center px-10 py-24  gap-10">
               <div className="lg:w-1/2 w-full font-poppins text-white  ">
                 <div className="flex flex-col  justify-center p-5 ">
-                  <div className="text-xl font-bold">
-                    “WANT TO JOIN US?”
-                  </div>
+                  <div className="text-xl font-bold">“WANT TO JOIN US?”</div>
                   <div className="mt-4">
                     Four words spoken to you, an unsuspecting patron dining
                     alone at a restaurant on an inconspicuous Friday, would be
@@ -164,14 +162,11 @@ const AboutUs = () => {
                     you have an experience you won’t forget.
                   </div>
                   <div className=" font-bold text-xl lg:mt-2">
-                      Kefi. . . THE WAY OF LIFE!  
+                    Kefi. . . THE WAY OF LIFE!
                   </div>
                 </div>
               </div>
             </div>
-
-
-
           </BackgroundImage>
         </div>
       </section>
@@ -249,7 +244,12 @@ const AboutUs = () => {
                 {cdata.map((item, index) => {
                   return (
                     <div key={index} className="flex mb-6 items-center">
-                      <div className=" flex justify-center "><StaticImage className="sm:w-6 w-4" src="../images/03 About us/Kefi-ICon.png" /></div>
+                      <div className=" flex justify-center ">
+                        <StaticImage
+                          className="sm:w-6 w-4"
+                          src="../images/03 About us/Kefi-ICon.png"
+                        />
+                      </div>
                       <div className="px-5">{item.name}</div>
                     </div>
                   )
@@ -267,9 +267,10 @@ const AboutUs = () => {
                 Our partners
               </div>
               <div className="max-w-xl mt-14 mb-10 mx-auto">
-                Kefi hospitality group is proud to collaborate three of most
-                innovative companies in the region to provide pioneering
-                solutions that redefine what true hospitality is
+                Kefi Hospitality Group is proud to collaborate with the most
+                innovative companies in the region. Together, we provide
+                pioneering solutions that redefine the true essence of
+                hospitality.
               </div>
             </div>
           </div>
@@ -308,7 +309,8 @@ const AboutUs = () => {
             <div className="lg:w-1/2 w-full">
               <StaticImage
                 src="../images/03 About us/invest image.png"
-                width={600}/>
+                width={600}
+              />
             </div>
             <div className="flex-col lg:w-1/2 w-full ">
               <div className="mb-8 text-4xl font-bold text-primaryDarkBlue ">
@@ -352,10 +354,10 @@ const AboutUs = () => {
           <StaticImage src="../images/03 About us/UAE location-01 1.png" />
         </div>
       </section> */}
-
+      {/* 
       <div className="lg:px-80  px-10 pt-24 pb-24">
         <Idea />
-      </div>
+      </div> */}
       <section className="mb-10">
         <BackgroundImage {...allImages.coffee} className="realtive">
           <div className=" absolute h-full bg-[#313131]/60 top-0 w-full" />
@@ -369,9 +371,9 @@ const AboutUs = () => {
               Potential to Achieve Your Dreams and Beyond!
             </div>
             <div className="flex flex-wrap justify-center py-10">
-            <Link to="/contact-us">
-              <div className=" px-6 py-4 rounded-lg text-lg text-white bg-primaryDarkBlue font-semibold font-poppins cursor-pointer hover:bg-primaryBlue duration-200 hover:text-white  flex justify-center ">
-                Check Openings
+              <Link to="/contact-us">
+                <div className=" px-6 py-4 rounded-lg text-lg text-white bg-primaryDarkBlue font-semibold font-poppins cursor-pointer hover:bg-primaryBlue duration-200 hover:text-white  flex justify-center ">
+                  Connect with us
                 </div>
               </Link>
             </div>

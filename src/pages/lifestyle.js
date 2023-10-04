@@ -9,6 +9,7 @@ import Button from "../components/elements/button"
 import { useState } from "react"
 import Idea from "../components/idea"
 import Fade from "react-reveal/Fade"
+import  { useEffect, useRef } from 'react';
 import { Zoom, Bounce } from "react-reveal"
 
 const LifestylePage = () => {
@@ -41,24 +42,115 @@ const LifestylePage = () => {
     }
   `)
 
-  function updateScrollPercentage(event) {
-    var scrollSection = event.target
-    var scrollPercentage =
-      (scrollSection.scrollLeft /
-        (scrollSection.scrollWidth - scrollSection.clientWidth)) *
-      100
+  // function updateScrollPercentage(event) {
+  //   var scrollSection = event.target
+  //   var scrollPercentage =
+  //     (scrollSection.scrollLeft /
+  //       (scrollSection.scrollWidth - scrollSection.clientWidth)) *
+  //     50
    
 
-    // Update pagination dots based on scroll percentage
-    var dots = document.getElementsByClassName("dot")
-    for (var i = 0; i < dots.length; i++) {
-      if (scrollPercentage >= i * 16.66 && scrollPercentage <= (i + 1) * 17) {
-        dots[i].classList.add("active")
-      } else {
-        dots[i].classList.remove("active")
-      }
+  //   // Update pagination dots based on scroll percentage
+  //   var dots = document.getElementsByClassName("dot")
+  //   for (var i = 0; i < dots.length; i++) {
+  //     if (scrollPercentage >= i * 16.66 && scrollPercentage <= (i + 1) * 17) {
+  //       dots[i].classList.add("active")
+  //     } else {
+  //       dots[i].classList.remove("active")
+  //     }
+  //   }
+  // }
+
+  const sliderRef = useRef(null);
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  useEffect(() => {
+    const totalSlides = masonry.length;
+    let slideIndex = currentSlide;
+
+    const interval = setInterval(() => {
+      slideIndex = (slideIndex + 1) % totalSlides; // Move to the next slide
+      const targetScrollLeft = (slideIndex / totalSlides) * sliderRef.current.scrollWidth;
+
+      sliderRef.current.scrollTo({
+        left: targetScrollLeft,
+        behavior: 'smooth',
+      });
+
+      setCurrentSlide(slideIndex);
+    }, 5000);
+
+    // Clear the interval when the component unmounts
+    return () => clearInterval(interval);
+  }, [currentSlide]);
+
+  const handleDotClick = (index) => {
+    const targetScrollLeft = (index / masonry.length) * sliderRef.current.scrollWidth;
+    sliderRef.current.scrollTo({
+      left: targetScrollLeft,
+      behavior: 'smooth',
+    });
+    setCurrentSlide(index);
+  };
+
+  const handleSlideChange = (direction) => {
+    let newSlideIndex = currentSlide + direction;
+    const totalSlides = masonry.length;
+
+    if (newSlideIndex < 0) {
+      newSlideIndex = totalSlides - 1;
+    } else if (newSlideIndex >= totalSlides) {
+      newSlideIndex = 0;
     }
-  }
+
+    const targetScrollLeft = (newSlideIndex / totalSlides) * sliderRef.current.scrollWidth;
+    sliderRef.current.scrollTo({
+      left: targetScrollLeft,
+      behavior: 'smooth',
+    });
+
+    setCurrentSlide(newSlideIndex);
+  };
+
+  let touchStartX = 0;
+
+  const handleTouchStart = (e) => {
+    touchStartX = e.touches[0].clientX;
+  };
+
+  const handleTouchEnd = (e) => {
+    const touchEndX = e.changedTouches[0].clientX;
+    const touchDistance = touchEndX - touchStartX;
+    const swipeThreshold = 50; // Adjust the threshold as needed
+
+    if (touchDistance > swipeThreshold) {
+      handleSlideChange(-1); // Swipe right
+    } else if (touchDistance < -swipeThreshold) {
+      handleSlideChange(1); // Swipe left
+    }
+  };
+
+  const handleScrollLeft = () => {
+    handleSlideChange(-1); // Scroll left
+  };
+
+  const handleScrollRight = () => {
+    handleSlideChange(1); // Scroll right
+  };
+
+  // const sliderRef = useRef(null);
+  // const [currentSlide, setCurrentSlide] = useState(0);
+
+
+
+  // const handleDotClick = (index) => {
+  //   // Calculate the target scroll position based on the clicked dot's index
+  //   const targetScrollLeft = (index / masonry.length) * sliderRef.current.scrollWidth;
+  //   sliderRef.current.scrollTo({
+  //     left: targetScrollLeft,
+  //     behavior: 'smooth', // You can change this to 'auto' for instant scrolling
+  //   });
+  // };
 
   const allImages = {
     header: convertToBgImage(getImage(data.header)),
@@ -179,9 +271,9 @@ const LifestylePage = () => {
         </div>
       </section>
 
-      <section>
+      {/* <section>
         <div
-          className="overflow-x-scroll md:ml-24 ml-10 scrollbar-hide mt-16"
+          className="overflow-x-scroll md:ml-24 ml-10  mt-16"
           onScroll={event => updateScrollPercentage(event)}
         >
           <div className="grid grid-cols-14 relative gap-5 md:w-[2700px] w-[1800px]">
@@ -211,7 +303,91 @@ const LifestylePage = () => {
            
           </div>
         </Zoom>
+      </section> */}
+       {/* <section>
+        <div
+          className="overflow-x-scroll hide-scroll md:ml-24 ml-10 mt-16"
+          ref={sliderRef}
+        >
+          <div className="grid grid-cols-14 relative gap-5 md:w-[2700px] w-[1800px]">
+            <Zoom>
+              {masonry.map((item, index) => (
+                <div className={`bg-primaryDarkBlue ${item.span}`} key={index}>
+                  <GatsbyImage
+                    image={getImage(
+                      data.allFile.nodes.find(
+                        node => node.name === item.image
+                      )
+                    )}
+                    alt={item.image}
+                    className="w-full h-full bg-cover"
+                  />
+                </div>
+              ))}
+            </Zoom>
+          </div>
+        </div>
+        <Zoom>
+          <div className="pagination flex justify-center items-center mt-10 gap-2 ">
+            {masonry.map((item, index) => (
+              <span
+                key={index}
+                className={`dot ${currentSlide  === index  ? 'active' : ''}`}
+                onClick={() => handleDotClick(index)}
+              ></span>
+            ))}
+          </div>
+        </Zoom>
+      </section> */}
+       <section>
+        <div
+          className="overflow-hidden md:ml-24 ml-10 mt-16"
+          ref={sliderRef}
+          onTouchStart={handleTouchStart}
+          onTouchEnd={handleTouchEnd}
+        >
+          <div className="grid grid-cols-14 relative gap-5 md:w-[2700px] w-[1800px]">
+            <Zoom>
+              {masonry.map((item, index) => (
+                <div className={`bg-primaryDarkBlue ${item.span}`} key={index}>
+                  <GatsbyImage
+                    image={getImage(
+                      data.allFile.nodes.find(
+                        (node) => node.name === item.image
+                      )
+                    )}
+                    alt={item.image}
+                    className="w-full h-full bg-cover"
+                  />
+                </div>
+              ))}
+            </Zoom>
+          </div>
+        </div>
+        <Zoom>
+          <div className="pagination flex justify-center items-center mt-10 gap-2">
+            {masonry.slice(0, 5).map((item, index) => (
+              <span
+                key={index}
+                className={`dot ${currentSlide === index ? 'active' : ''}`}
+                onClick={() => handleDotClick(index)}
+              ></span>
+            ))}
+          </div>
+        </Zoom>
       </section>
+      {/* <section>
+        <div className="flex justify-center items-center mt-4 gap-2">
+          <button onClick={handleScrollLeft}>Scroll Left</button>
+          <button onClick={handleScrollRight}>Scroll Right</button>
+        </div>
+      </section> */}
+      {/* <section>
+        <div className="flex justify-center items-center mt-4 gap-2">
+          <button onClick={() => handleSlideChange(-1)}>Previous</button>
+          <button onClick={() => handleSlideChange(1)}>Next</button>
+        </div>
+      </section> */}
       <section>
         <Zoom>
           <div className="lg:px-80 px-10 lg:py-24 py-20">
