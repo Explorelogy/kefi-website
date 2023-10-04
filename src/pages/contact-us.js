@@ -96,7 +96,7 @@ export default class Contact extends React.Component {
     return (
       <Layout>
         <section>
-          <div className="px-32 py-24">
+          <div className="px-32 mb-8 py-24">
             <div className="flex justify-center items-center">
               <div className="flex xl:flex-row flex-col items-center  gap-32 justify-center container">
                 <div className="flex   items-center justify-center">
@@ -279,9 +279,9 @@ export default class Contact extends React.Component {
             </div>
           </div>
         </section>
-        <section>
+        {/* <section className="mb-8">
           <AllImage />
-        </section>
+        </section> */}
       </Layout>
     )
   }
