@@ -152,19 +152,19 @@ const WellbeingPage = () => {
       span: "col-span-3 row-span-0",
     },
     {
-      image: "well_beign_gallery_2",
+      image: "well_beign_gallery_6",
       colspan: 2,
       rowspan: 2,
       span: "col-span-2 row-span-2",
     },
     {
-      image: "well_beign_gallery_5",
+      image: "well_beign_gallery_7",
       colspan: 2,
       rowspan: 0,
       span: "col-span-2 row-span-0",
     },
     {
-      image: "well_beign_gallery_3",
+      image: "well_beign_gallery_8",
       colspan: 3,
       rowspan: 0,
       span: "col-span-3 row-span-0",
@@ -182,13 +182,13 @@ const WellbeingPage = () => {
       span: "col-span-3 row-span-0",
     },
     {
-      image: "well_beign_gallery_1",
+      image: "well_beign_gallery_9",
       colspan: 2,
       rowspan: 0,
       span: "col-span-2 row-span-0",
     },
     {
-      image: "well_beign_gallery_4",
+      image: "well_beign_gallery_10",
       colspan: 3,
       rowspan: 0,
       span: "col-span-3 row-span-0",
@@ -199,7 +199,7 @@ const WellbeingPage = () => {
       <section>
         <div className="relative h-full">
           <BackgroundImage {...allImages.header} className="bg-right-top py-16">
-            <div className="bg-[#171A40]/60 absolute top-0 w-full h-full z-10" />
+            {/* <div className="bg-[#171A40]/60 absolute top-0 w-full h-full z-10" /> */}
             <div className="py-24 px-32 gap-10  z-20 relative   flex md:flex-row flex-col justify-center items-center h-full">
               <Fade left>
                 <div className="md:w-24 w-16">
