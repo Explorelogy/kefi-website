@@ -133,7 +133,7 @@ const FoodAndBeveragePage = () => {
       <section>
         <div className="relative h-full">
           <BackgroundImage {...allImages.header} className="bg-right-top py-16">
-            <div className="bg-[#171A40]/60 absolute top-0 w-full h-full z-10" />
+            {/* <div className="bg-[#171A40]/60 absolute top-0 w-full h-full z-10" /> */}
             <div className="py-24 px-32 gap-10  z-20 relative   flex md:flex-row flex-col justify-center items-center h-full">
               <Fade left>
                 <div className="md:w-24 w-16">

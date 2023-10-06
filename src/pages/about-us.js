@@ -193,11 +193,11 @@ const AboutUs = () => {
                   className="w-full"
                 />
               </div>
-              <div className="flex justify-center lg:pl-72 ">
+              <div className="flex justify-center  ">
                 <div>
                   <div className=" max-w-xl lg:text-left text-center mb-10">
                     Kefi Hospitality Group is a hospitality investment and
-                    operations/ management company that is driven to create
+                    operations management company that is driven to create
                     pioneering concepts and renowned brands that imbue
                     unforgettable experiences. We wish to help you create your
                     Kefi experience and journey.
