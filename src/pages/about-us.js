@@ -120,15 +120,15 @@ const AboutUs = () => {
         <div className="relative h-full">
           <BackgroundImage {...allImages.header} className="bg-right-top py-8">
             <div className="bg-[#171A40]/60 absolute top-0 w-full h-full z-10" />
-            <div className="py-24 lg:px-32 px-10 gap-10  z-20 relative   flex md:flex-row flex-col justify-center items-center h-full">
+            <div className="md:py-24 py-10 lg:px-32 px-10 gap-10  z-20 relative   flex md:flex-row flex-col justify-center items-center h-full">
               <Fade right>
-                <div className="flex justify-center font-poppins text-5xl text-white font-bold">
+                <div className="flex justify-center font-poppins text-4xl md:text-5xl text-white font-bold">
                   Our story
                 </div>
               </Fade>
             </div>
 
-            <div className="flex lg:flex-row  z-20 relative flex-col justify-center  lg:px-32 items-center px-10 py-24  gap-10">
+            <div className="flex lg:flex-row  z-20 relative flex-col justify-center  lg:px-32 items-center px-10 lg:py-24 py-10 gap-10">
               <div className="lg:w-1/2 w-full font-poppins text-white  ">
                 <div className="flex flex-col  justify-center p-5 ">
                   <div className="text-xl font-bold">“WANT TO JOIN US?”</div>
@@ -305,15 +305,15 @@ const AboutUs = () => {
 
       <section>
         <div>
-          <div className="flex lg:flex-row flex-col justify-center bg-[#F6F6F6] lg:px-32 px-10 py-24 items-center gap-10">
-            <div className="lg:w-1/2 w-full">
+          <div className="flex lg:flex-row flex-col justify-center bg-[#F6F6F6] lg:px-32 px-10 py-24 items-center gap-0 lg:gap-40">
+            <div className=" ">
               <StaticImage
                 src="../images/03 About us/invest image.png"
                 width={600}
               />
             </div>
-            <div className="flex-col lg:w-1/2 w-full ">
-              <div className="mb-8 text-4xl font-bold text-primaryDarkBlue ">
+            <div className="flex-col lg:text-left text-center    ">
+              <div className="mb-8 mt-8 text-4xl font-bold text-primaryDarkBlue ">
                 Invest & Grow With Us
               </div>
               <div className="text-primaryDarkBlue  mb-10 max-w-xl">
@@ -324,7 +324,7 @@ const AboutUs = () => {
                 to flourish. Join us in creating unforgettable experiences that
                 exude fulfillment, joy, and happiness.
               </div>
-              <div className="flex flex-wrap ">
+              <div className="flex flex-wrap lg:justify-start justify-center ">
                 <div className="px-5 py-3 border-primaryDarkBlue border-2 rounded-lg text-primaryDarkBlue font-semibold font-poppins cursor-pointer hover:bg-primaryDarkBlue duration-200 hover:text-white  flex justify-center ">
                   Learn More
                 </div>

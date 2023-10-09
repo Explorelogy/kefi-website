@@ -100,8 +100,8 @@ export default class Contact extends React.Component {
             <div className="flex justify-center items-center">
               <div className="flex xl:flex-row flex-col items-center  gap-32 justify-center container">
                 <div className="flex   items-center justify-center">
-                  <div className="items-center justify-center">
-                    <div className="w-1/5 ">
+                  <div className="">
+                    <div className="lg:w-1/5 mx-auto flex items-center justify-center w-full  ">
                       <StaticImage
                         src="../images/09 Contact/Kefi_Logo_icon.png"
                         className=" "
@@ -176,7 +176,7 @@ export default class Contact extends React.Component {
                               {" "}
                               Plot number: 598-1096 Street Number 51,
                             </div>{" "}
-                            <div>Dubai Investment Park Dubai,UAE  </div>
+                            <div>Dubai Investment Park Dubai,UAE </div>
                             <div>PO Box 191869.</div>
                           </div>
                         </div>
