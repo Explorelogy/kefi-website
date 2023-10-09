@@ -19,11 +19,10 @@ const IndexPage = () => {
           >
             <source src={bgVideo} />
           </video>
-          <div className="absolute inset-0 flex justify-center items-center z-20">
+          <div className="absolute inset-0 flex justify-center items-center z-20 mx-10">
             <div>
-              <div className="text-6xl font-bold text-white  text-center font-poppins tracking-wide">
-                <div>Hospitality Strategies, </div>
-                <div className="mt-4">Investments & Management</div>
+              <div className="lg:text-6xl md:text-5xl text-4xl max-w-5xl font-bold text-white  text-center font-poppins tracking-wide">
+                <div>Hospitality Strategies, Investments & Management</div>
               </div>
               <div className="mt-10 text-white text-center max-w-md mx-auto">
                 Redefining hospitality through investing in and managing unique

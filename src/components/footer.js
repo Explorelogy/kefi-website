@@ -32,20 +32,21 @@ const Footer = () => {
       </Fade> */}
       {/* <div className="h-[1px] bg-black/20 mb-8"></div> */}
       <div className="px-20 ">
-        <div className="flex md:flex-row flex-col  justify-between items-center">
+        <div className="flex lg:flex-row flex-col  justify-between items-center">
           <Fade bottom>
             <Link to="/contact-us">
-              <div className="text-sm font-extrabold text-primaryDarkBlue cursor-pointer md:mb-0 mb-6">
+              <div className="text-sm font-extrabold text-primaryDarkBlue cursor-pointer lg:mb-0 mb-6">
                 Contact us
               </div>
             </Link>
             <div>
-            <div className="flex md:flex-row flex-col lg:ml-64 justify-center items-center ">
-               <StaticImage
+              <div className="flex  md:flex-row flex-col lg:ml-10 xl:ml-64 justify-center lg:mb-0 mb-6 items-center ">
+                <StaticImage
                   src="../images/09 Contact/Kefi_Logo_icon.png"
                   width={50}
-                  className="" />
-                </div>
+                  className=""
+                />
+              </div>
             </div>
             <div>
               <div className="flex md:flex-row flex-col justify-between items-center gap-5 ">
