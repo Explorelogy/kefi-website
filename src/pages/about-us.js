@@ -187,10 +187,10 @@ const AboutUs = () => {
           <div className="flex justify-center items-center">
             <div className="flex lg:flex-row flex-col lg:justify-start w-full gap-20 justify-center">
               {" "}
-              <div className="lg:w-1/3 w-1/2 mx-auto">
+              <div className="lg:w-1/3 w-1/2 mx-auto ">
                 <StaticImage
-                  src="../images/03 About us/artwork.png"
-                  className="w-full"
+                  src="../images/03 About us/Kefi_Logo_icon.png"
+                  className="w-52 lg:top-16 top-5 md:left-28 lg:left-72 left-2"
                 />
               </div>
               <div className="flex justify-center  ">
@@ -287,11 +287,11 @@ const AboutUs = () => {
               <div className="w-1/2 ">
                 <StaticImage src="../images/03 About us/Brands/logo-4.png" />
               </div>
-              <div className="w-1/2 ">
+              <div className="w-2/3  ">
                 <StaticImage src="../images/03 About us/Brands/logo-1.png" />
               </div>
 
-              <div className="w-1/2 ">
+              <div className="w-2/3 ">
                 <StaticImage src="../images/03 About us/Brands/logo-3.png" />
               </div>
 
@@ -373,7 +373,7 @@ const AboutUs = () => {
             <div className="flex flex-wrap justify-center py-10">
               <Link to="/contact-us">
                 <div className=" px-6 py-4 rounded-lg text-lg text-white bg-primaryDarkBlue font-semibold font-poppins cursor-pointer hover:bg-primaryBlue duration-200 hover:text-white  flex justify-center ">
-                  Connect with us
+                  Join us
                 </div>
               </Link>
             </div>
