@@ -31,23 +31,25 @@ const Footer = () => {
         </div>
       </Fade> */}
       {/* <div className="h-[1px] bg-black/20 mb-8"></div> */}
-      <div className="px-20 ">
-        <div className="flex md:flex-row flex-col  justify-between items-center">
-          <Fade bottom>
-            <Link to="/contact-us">
-              <div className="text-sm font-extrabold text-primaryDarkBlue cursor-pointer md:mb-0 mb-6">
-                Contact us
-              </div>
-            </Link>
-            <div>
-            <div className="flex md:flex-row flex-col lg:ml-64 justify-center items-center ">
-               <StaticImage
-                  src="../images/09 Contact/Kefi_Logo_icon.png"
-                  width={50}
-                  className="" />
-                </div>
+      <div className="px-20">
+        <div className="flex md:flex-row flex-col justify-between items-center">
+          <div className="top-0 left-64">
+            {" "}
+            {/* Center the image on all screens */}
+            <StaticImage
+              src="../images/09 Contact/Kefi_Logo_icon.png"
+              width={50}
+              className="mx-auto " // Center the image horizontally
+            />
+          </div>
+          <Link to="/contact-us">
+            <div className="text-sm font-extrabold text-primaryDarkBlue cursor-pointer md:mb-0 mb-6 text-right md:text-left">
+              Contact Us
             </div>
-            <div>
+          </Link>
+        </div>
+      </div>
+      {/* <div>
               <div className="flex md:flex-row flex-col justify-between items-center gap-5 ">
                 {icons.map((item, index) => (
                   <>
@@ -77,7 +79,7 @@ const Footer = () => {
             </div>
           </Fade>
         </div>
-      </div>
+      </div> */}
       <div className="py-5 mt-8 bg-primaryDarkBlue/40">
         <div className="md:px-20 px-10">
           <div className="flex justify-between items-center text-white text-sm">
