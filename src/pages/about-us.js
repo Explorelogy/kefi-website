@@ -184,17 +184,17 @@ const AboutUs = () => {
 
       <section>
         <div className="lg:px-32 px-10 py-24">
-          <div className="flex justify-center items-center">
-            <div className="flex lg:flex-row flex-col lg:justify-start w-full gap-20 justify-center">
+          <div className="">
+            <div className="grid lg:grid-cols-2 grid-row   w-full lg:gap-20 gap-10 justify-center items-center ">
               {" "}
-              <div className="lg:w-1/3 w-1/2 mx-auto ">
+              <div className=" flex justify-center items-center  ">
                 <StaticImage
                   src="../images/03 About us/Kefi_Logo_icon.png"
-                  className="w-52 lg:top-16 top-5 md:left-28 lg:left-72 left-2"
+                  className="lg:w-52 w-40 left-2"
                 />
               </div>
-              <div className="flex justify-center  ">
-                <div>
+              <div className="flex justify-center">
+                <div className="">
                   <div className=" max-w-xl lg:text-left text-center mb-10">
                     Kefi Hospitality Group is a hospitality investment and
                     operations management company that is driven to create

@@ -123,25 +123,25 @@ const InvestmentPage = () => {
 
       <section>
         <div className="lg:px-32 px-10 py-24 ">
-          <div className="flex lg:flex-row flex-col justify-between gap-14">
+          <div className="flex lg:flex-row flex-col items-center gap-14">
             <div className="lg:w-1/2 w-full ">
               <StaticImage src="../images/04 Investment/lifestyle.jpg" />
             </div>
-            <div className="lg:w-1/2 w-full flex flex-col justify-between">
+            <div className="lg:w-1/2 w-full flex flex-col ">
               <div className="w-1/6 ">
                 <StaticImage src="../images/04 Investment/lifestyle icon.png" />
               </div>
               <div className=" font-extrabold font-poppins  mt-8 text-primaryDarkBlue max-w-xl text-4xl">
                 Lifestyle
               </div>
-              <div className="mt-14 mb-10 max-w-xl">
+              <div className="mt-8  max-w-xl">
                 We develop extraordinary lifestyle experiences where creativity
                 meets comfort. Expect the unexpected as we craft unforgettable
                 stays, blending intimate charm with lavish luxuries to create
                 memories that last a lifetime.
               </div>
               <div className="flex flex-wrap">
-                <div className="px-5 py-3 border-primaryDarkBlue border-2 rounded-lg text-primaryDarkBlue font-semibold font-poppins cursor-pointer hover:bg-primaryDarkBlue duration-200 hover:text-white  flex justify-center ">
+                <div className="mt-8 px-5 py-3 border-primaryDarkBlue border-2 rounded-lg text-primaryDarkBlue font-semibold font-poppins cursor-pointer hover:bg-primaryDarkBlue duration-200 hover:text-white  flex justify-center ">
                   Learn More
                 </div>
               </div>
@@ -150,27 +150,27 @@ const InvestmentPage = () => {
         </div>
 
         <div className="lg:px-32 px-10 py-24 bg-gray-200/30">
-          <div className="flex lg:flex-row flex-col  gap-14">
+          <div className="flex lg:flex-row flex-col items-center gap-14">
             <div className="lg:w-1/2 w-full lg:hidden block ">
               <StaticImage src="../images/04 Investment/lifestyle.png" />
             </div>
-            <div className="lg:w-1/2 w-full flex flex-col  justify-between">
-              <div className="flex lg:justify-end">
+            <div className="lg:w-1/2 w-full flex flex-col  ">
+              <div className="flex ">
                 <div className="w-1/6   ">
                   <StaticImage src="../images/04 Investment/Food & Beverage icon.png" />
                 </div>
               </div>
-              <div className=" font-extrabold font-poppins lg:text-right mt-8 text-primaryDarkBlue  text-4xl">
+              <div className=" font-extrabold font-poppins  mt-8 text-primaryDarkBlue  text-4xl">
                 Food & Beverage
               </div>
-              <div className="mt-14 mb-10 lg:text-right ">
+              <div className="mt-8   ">
                 We concoct unique concepts that bring the best food and drinks
                 to its visitors along with a relaxing atmosphere, resulting in
                 unforgettable culinary experiences. Unwind in style with
                 exquisite flavours and a memorable ambience.
               </div>
-              <div className="flex  lg:justify-end flex-wrap">
-                <div className="px-5 py-3 border-primaryDarkBlue border-2 rounded-lg text-primaryDarkBlue font-semibold font-poppins cursor-pointer hover:bg-primaryDarkBlue duration-200 hover:text-white   ">
+              <div className="flex   flex-wrap">
+                <div className="px-5 py-3 mt-8 border-primaryDarkBlue border-2 rounded-lg text-primaryDarkBlue font-semibold font-poppins cursor-pointer hover:bg-primaryDarkBlue duration-200 hover:text-white   ">
                   Learn More
                 </div>
               </div>
@@ -182,25 +182,25 @@ const InvestmentPage = () => {
         </div>
 
         <div className="lg:px-32 px-10 pt-24">
-          <div className="flex lg:flex-row flex-col justify-between gap-14">
+          <div className="flex lg:flex-row flex-col items-center gap-14">
             <div className="lg:w-1/2 w-full ">
               <StaticImage src="../images/04 Investment/Wellbeing.png" />
             </div>
-            <div className="lg:w-1/2 w-full flex flex-col justify-between">
+            <div className="lg:w-1/2 w-full flex flex-col ">
               <div className="w-1/6 ">
                 <StaticImage src="../images/04 Investment/Wellbeing icon.png" />
               </div>
               <div className=" font-extrabold font-poppins  mt-8 text-primaryDarkBlue max-w-xl text-4xl">
                 Wellbeing
               </div>
-              <div className="mt-14 mb-10 max-w-xl">
+              <div className="mt-8 max-w-xl">
                 We create healing experiences that calm, refresh and rejuvenate
                 the mind and soul. Escape the outside world and indulge in
                 personalized relaxation, with nurturing services, delicious
                 cuisine and tranquil environments.vv
               </div>
               <div className="flex flex-wrap">
-                <div className="px-5 py-3 border-primaryDarkBlue border-2 rounded-lg text-primaryDarkBlue font-semibold font-poppins cursor-pointer hover:bg-primaryDarkBlue duration-200 hover:text-white  flex justify-center ">
+                <div className="px-5 mt-8 py-3 border-primaryDarkBlue border-2 rounded-lg text-primaryDarkBlue font-semibold font-poppins cursor-pointer hover:bg-primaryDarkBlue duration-200 hover:text-white  flex justify-center ">
                   Learn More
                 </div>
               </div>
