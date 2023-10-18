@@ -32,8 +32,9 @@ const Footer = () => {
       </Fade> */}
       {/* <div className="h-[1px] bg-black/20 mb-8"></div> */}
       <div className="px-20">
-        <div className="flex md:flex-row flex-col justify-between items-center">
-          <div className="flex justify-center items-center top-0 left-72 h-full w-full md:pl-16">
+        <div className="grid lg:grid-cols-3 grid-row  items-center">
+          <div></div>
+          <div className="flex justify-center items-center top-0  h-full w-full ">
             {/* Center the image on all screens */}
             <StaticImage
               src="../images/09 Contact/Kefi_Logo_icon.png"
@@ -41,11 +42,13 @@ const Footer = () => {
               className="mx-auto" // Center the image horizontally
             />
           </div>
-          <Link to="/contact-us">
-            <div className="text-sm font-extrabold text-primaryDarkBlue cursor-pointer md:mb-0 mb-6 lg:text-center md:text-center text-right ">
-              Contact Us
-            </div>
-          </Link>
+          <div>
+            <Link to="/contact-us">
+              <div className="text-sm font-extrabold text-primaryDarkBlue cursor-pointer lg:mt-0 mt-6 text-center lg:text-right ">
+                Contact Us
+              </div>
+            </Link>
+          </div>
         </div>
       </div>
       {/* <div>

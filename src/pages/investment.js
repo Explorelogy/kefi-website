@@ -8,7 +8,6 @@ import { convertToBgImage } from "gbimage-bridge"
 import Button from "../components/elements/button"
 import Idea from "../components/idea"
 
-
 const InvestmentPage = () => {
   const data = useStaticQuery(graphql`
     query {
@@ -81,9 +80,12 @@ const InvestmentPage = () => {
                   Investments
                 </div>
                 <div className="text-white max-w-2xl mx-auto text-center">
-                  Kefi Hospitality Group’s Investment services help you grow
-                  your business and realise your true potential while ensuring
-                  customer satisfaction remains at the heart of the experience.{" "}
+                  <div>
+                    Kefi Hospitality Group’s Investment services help you grow
+                    your business and realise your true potential while ensuring
+                    customer satisfaction
+                  </div>
+                  <div>remains at the heart of the experience. </div>
                 </div>
               </div>
             </div>
@@ -148,25 +150,27 @@ const InvestmentPage = () => {
         </div>
 
         <div className="lg:px-32 px-10 py-24 bg-gray-200/30">
-          <div className="flex lg:flex-row flex-col justify-between gap-14">
+          <div className="flex lg:flex-row flex-col  gap-14">
             <div className="lg:w-1/2 w-full lg:hidden block ">
               <StaticImage src="../images/04 Investment/lifestyle.png" />
             </div>
-            <div className="lg:w-1/2 w-full flex flex-col justify-between">
-              <div className="w-1/6 ">
-                <StaticImage src="../images/04 Investment/Food & Beverage icon.png" />
+            <div className="lg:w-1/2 w-full flex flex-col  justify-between">
+              <div className="flex lg:justify-end">
+                <div className="w-1/6   ">
+                  <StaticImage src="../images/04 Investment/Food & Beverage icon.png" />
+                </div>
               </div>
-              <div className=" font-extrabold font-poppins  mt-8 text-primaryDarkBlue max-w-xl text-4xl">
+              <div className=" font-extrabold font-poppins lg:text-right mt-8 text-primaryDarkBlue  text-4xl">
                 Food & Beverage
               </div>
-              <div className="mt-14 mb-10 max-w-xl">
+              <div className="mt-14 mb-10 lg:text-right ">
                 We concoct unique concepts that bring the best food and drinks
                 to its visitors along with a relaxing atmosphere, resulting in
                 unforgettable culinary experiences. Unwind in style with
                 exquisite flavours and a memorable ambience.
               </div>
-              <div className="flex flex-wrap">
-                <div className="px-5 py-3 border-primaryDarkBlue border-2 rounded-lg text-primaryDarkBlue font-semibold font-poppins cursor-pointer hover:bg-primaryDarkBlue duration-200 hover:text-white  flex justify-center ">
+              <div className="flex  lg:justify-end flex-wrap">
+                <div className="px-5 py-3 border-primaryDarkBlue border-2 rounded-lg text-primaryDarkBlue font-semibold font-poppins cursor-pointer hover:bg-primaryDarkBlue duration-200 hover:text-white   ">
                   Learn More
                 </div>
               </div>
