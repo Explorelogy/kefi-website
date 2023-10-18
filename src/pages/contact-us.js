@@ -101,19 +101,21 @@ export default class Contact extends React.Component {
               <div className="flex xl:flex-row flex-col items-center  gap-32 justify-center container">
                 <div className="flex   items-center justify-center">
                   <div className="">
-                    <div className="lg:w-1/5 mx-auto flex items-center justify-center w-full  ">
-                      <StaticImage
-                        src="../images/09 Contact/Kefi_Logo_icon.png"
-                        className=" "
-                      />
+                    <div className="">
+                      <div className="w-24  flex xl:justify-start justify-center xl:mx-0 mx-auto  ">
+                        <StaticImage
+                          src="../images/09 Contact/Kefi_Logo_icon.png"
+                          className=" "
+                        />
+                      </div>
                     </div>
 
-                    <div className=" font-extrabold font-poppins mb-8 mt-10   text-primaryDarkBlue  text-4xl leading-normal">
+                    <div className=" font-extrabold font-poppins mb-8 mt-10   text-primaryDarkBlue text-3xl sm:text-4xl xl:text-start text-center">
                       Connect With Us
                     </div>
 
                     <div>
-                      <div className=" text-primaryDarkBlue max-w-xl text-lg">
+                      <div className=" text-primaryDarkBlue max-w-xl sm:text-lg">
                         We love hearing new ideas and receiving new challenges,
                         so get in touch with us today! If you want to build a
                         hospitality concept that will leave a lasting impression
@@ -131,10 +133,10 @@ export default class Contact extends React.Component {
                           </div>
 
                           <div className="flex  flex-col justify-items-center ">
-                            <div className="text-base font-poppins leading-6 font-bold align-top">
+                            <div className="sm:text-base font-poppins leading-6 font-bold align-top">
                               Call us
                             </div>
-                            <div className=" font-montserrat font-normal text-lg align-top">
+                            <div className=" font-montserrat font-normal text-base sm:text-lg align-top">
                               +971 (0)4 852 5705
                             </div>
                           </div>
@@ -152,7 +154,7 @@ export default class Contact extends React.Component {
                             <div className="text-base font-poppins leading-6 font-bold align-top">
                               Email us
                             </div>
-                            <div className=" font-montserrat font-normal text-lg align-top">
+                            <div className=" font-montserrat font-normal text-base sm:text-lg  align-top">
                               info@kefi-hospitality.com
                             </div>
                           </div>
@@ -170,7 +172,7 @@ export default class Contact extends React.Component {
                           <div className="text-base font-poppins leading-6 font-bold align-top">
                             Address
                           </div>
-                          <div className=" font-montserrat font-normal text-lg align-top">
+                          <div className=" font-montserrat font-normal text-base sm:text-lg  align-top">
                             <div> Kefi Hospitality Group. </div>
                             <div>
                               {" "}
@@ -186,15 +188,15 @@ export default class Contact extends React.Component {
                 </div>
                 <div className="flex  flex-row items-center justify-center">
                   <div className="w-96 ">
-                    <div className="  mx-auto font-poppins font-extrabold text-4xl text-primaryDarkBlue">
+                    <div className="  mx-auto font-poppins font-extrabold text-3xl sm:text-4xl text-primaryDarkBlue">
                       Drop A Message
                     </div>
                     <form action="" onSubmit={this.onSubmit}>
                       <div className="mt-8">
-                        <div className="font-montserrat text-lg text-primaryDarkBlue">
+                        <div className="font-montserrat text-base sm:text-lg text-primaryDarkBlue">
                           Enter Your Name
                         </div>
-                        <div className="font-montserrat text-gray-400 text-lg mt-3  ">
+                        <div className="font-montserrat text-gray-400 text-base sm:text-lg mt-3  ">
                           <input
                             type="text"
                             onChange={this.handleChange.bind(this, "firstName")}
@@ -219,13 +221,13 @@ export default class Contact extends React.Component {
                       </div>
 
                       <div className="mt-6">
-                        <div className="font-montserrat text-lg text-primaryDarkBlue">
+                        <div className="font-montserrat text-base sm:text-lg text-primaryDarkBlue">
                           Enter Email
                         </div>
                         <div className="  mt-3 ">
                           <input
                             type="text"
-                            className="block p-2.5  w-full  border-solid border-2 border-primaryDarkBlue rounded-lg py-2 shadow-[0px_ 1px_10px_rgba(0,0,0,0.4)] font-montserrat text-gray-400 text-lg "
+                            className="block p-2.5  w-full  border-solid border-2 border-primaryDarkBlue rounded-lg py-2 shadow-[0px_ 1px_10px_rgba(0,0,0,0.4)] font-montserrat text-gray-400 text-base sm:text-lg "
                             placeholder="Your Email"
                             name="email"
                             onChange={this.handleChange.bind(this, "email")}
@@ -247,13 +249,13 @@ export default class Contact extends React.Component {
                       </div>
 
                       <div className="mt-6">
-                        <div className="font-montserrat text-lg text-primaryDarkBlue">
+                        <div className="font-montserrat text-base sm:text-lg text-primaryDarkBlue">
                           Enter Your Message
                         </div>
                         <div className=" font-montserrat text-gray-400 text-lg mt-3 ">
                           <textarea
                             rows="4"
-                            className="block p-2.5 w-full  rounded-lg border-solid border-2 border-primaryDarkBlue font-montserrat text-gray-400 text-lg"
+                            className="block p-2.5 w-full  rounded-lg border-solid border-2 border-primaryDarkBlue font-montserrat text-gray-400 text-base sm:text-lg"
                             placeholder="Your Message"
                             onChange={this.handleChange.bind(this, "message")}
                             value={this.state.fields["message"] || ""}
@@ -265,7 +267,7 @@ export default class Contact extends React.Component {
                       <div className=" mt-6 ">
                         <div>
                           <button
-                            className=" w-1/2 py-4 px-2 rounded-lg text-xl text-white bg-primaryDarkBlue font-semibold font-poppins cursor-pointer hover:bg-primaryBlue duration-200 hover:text-white "
+                            className=" w-1/2 py-4 px-2 rounded-lg text-lg sm:text-xl text-white bg-primaryDarkBlue font-semibold font-poppins cursor-pointer hover:bg-primaryBlue duration-200 hover:text-white "
                             type="submit"
                           >
                             Submit Message
