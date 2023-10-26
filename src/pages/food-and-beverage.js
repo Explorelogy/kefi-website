@@ -159,18 +159,19 @@ const FoodAndBeveragePage = () => {
           <div className="flex md:flex-row flex-col justify-center gap-10 items-center text-primaryDarkBlue md:text-left text-center">
             <Fade left>
               <div className=" font-poppins text-4xl  font-bold max-w-xs leading-snug ">
-                Learn about<br/> Food & Beverage
+                Learn about
+                <br /> Food & Beverage
               </div>
             </Fade>
             <Fade right>
-              <div className="max-w-xl">
-                At Kefi, we believe that food and drinks are not just about
-                nourishment, but also about creating unforgettable experiences.
-                Our team of experts develops innovative ideas that blend
-                delicious flavours with a relaxing atmosphere to deliver
-                exceptional culinary experiences. Discover how our passion for
-                food and beverages can help you bring your own unique vision to
-                life.
+              <div className="max-w-xl text-justify">
+                At Kefi Hospitality Group, we believe that food and drinks are
+                not just about nourishment, but also about creating
+                unforgettable experiences. Our team of experts develops
+                innovative ideas that blend delicious flavours with a relaxing
+                atmosphere to deliver exceptional culinary experiences. Discover
+                how our passion for food and beverages can help you bring your
+                unique vision to life.
               </div>
             </Fade>
           </div>
@@ -178,9 +179,9 @@ const FoodAndBeveragePage = () => {
       </section>
 
       <section>
-      <div className="flex  justify-center">
-            <StaticImage src="../images/11 Food & Beverage/F&B-Image.png" />
-          </div>
+        <div className="flex  justify-center">
+          <StaticImage src="../images/11 Food & Beverage/F&B-Image.png" />
+        </div>
         {/* <div
           className="overflow-x-scroll md:ml-24 ml-10 scrollbar-hide mt-16"
           onScroll={event => updateScrollPercentage(event)}

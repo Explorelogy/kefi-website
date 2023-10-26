@@ -10,7 +10,8 @@ import { useState } from "react"
 import Idea from "../components/idea"
 import Fade from "react-reveal/Fade"
 import { Zoom, Bounce } from "react-reveal"
-import  { useEffect, useRef } from 'react';
+import { useEffect, useRef } from "react"
+import MainSlider from "../components/slider/mainSlider"
 
 const WellbeingPage = () => {
   const data = useStaticQuery(graphql`
@@ -24,11 +25,7 @@ const WellbeingPage = () => {
           publicURL
         }
       }
-      header: file(
-        relativePath: {
-          eq: "08 Well-being/Wellbeing-Header.jpg"
-        }
-      ) {
+      header: file(relativePath: { eq: "08 Well-being/Wellbeing-Header.jpg" }) {
         childImageSharp {
           gatsbyImageData(width: 1920, quality: 100, placeholder: BLURRED)
         }
@@ -48,88 +45,9 @@ const WellbeingPage = () => {
     }
   `)
 
-  const sliderRef = useRef(null);
-  const [currentSlide, setCurrentSlide] = useState(0);
-
-  useEffect(() => {
-    const totalSlides = masonry.length;
-    let slideIndex = currentSlide;
-
-    const interval = setInterval(() => {
-      slideIndex = (slideIndex + 1) % totalSlides; // Move to the next slide
-      const targetScrollLeft = (slideIndex / totalSlides) * sliderRef.current.scrollWidth;
-
-      sliderRef.current.scrollTo({
-        left: targetScrollLeft,
-        behavior: 'smooth',
-      });
-
-      setCurrentSlide(slideIndex);
-    }, 5000);
-
-    // Clear the interval when the component unmounts
-    return () => clearInterval(interval);
-  }, [currentSlide]);
-
-  const handleDotClick = (index) => {
-    const targetScrollLeft = (index / masonry.length) * sliderRef.current.scrollWidth;
-    sliderRef.current.scrollTo({
-      left: targetScrollLeft,
-      behavior: 'smooth',
-    });
-    setCurrentSlide(index);
-  };
-
-  const handleSlideChange = (direction) => {
-    let newSlideIndex = currentSlide + direction;
-    const totalSlides = masonry.length;
-
-    if (newSlideIndex < 0) {
-      newSlideIndex = totalSlides - 1;
-    } else if (newSlideIndex >= totalSlides) {
-      newSlideIndex = 0;
-    }
-
-    const targetScrollLeft = (newSlideIndex / totalSlides) * sliderRef.current.scrollWidth;
-    sliderRef.current.scrollTo({
-      left: targetScrollLeft,
-      behavior: 'smooth',
-    });
-
-    setCurrentSlide(newSlideIndex);
-  };
-
-  let touchStartX = 0;
-
-  const handleTouchStart = (e) => {
-    touchStartX = e.touches[0].clientX;
-  };
-
-  const handleTouchEnd = (e) => {
-    const touchEndX = e.changedTouches[0].clientX;
-    const touchDistance = touchEndX - touchStartX;
-    const swipeThreshold = 50; // Adjust the threshold as needed
-
-    if (touchDistance > swipeThreshold) {
-      handleSlideChange(-1); // Swipe right
-    } else if (touchDistance < -swipeThreshold) {
-      handleSlideChange(1); // Swipe left
-    }
-  };
-
-  const handleScrollLeft = () => {
-    handleSlideChange(-1); // Scroll left
-  };
-
-  const handleScrollRight = () => {
-    handleSlideChange(1); // Scroll right
-  };
-
   const allImages = {
     header: convertToBgImage(getImage(data.header)),
     lifestyle: getImage(data.lifestyle),
-
-    // iconBackground: getImage(data.iconBackground),
   }
 
   const masonry = [
@@ -219,67 +137,39 @@ const WellbeingPage = () => {
           </BackgroundImage>
         </div>
       </section>
-
       <section>
         <div className="bg-gray-200/30 py-24 md:px-32 px-10">
           <div className="flex md:flex-row flex-col justify-center gap-10  items-center text-primaryDarkBlue md:text-left text-center">
             <Fade left>
               <div className=" font-poppins text-4xl  font-bold max-w-xs leading-snug ">
-                Learn about<br/> Well being
+                Learn about
+                <br /> Wellbeing
               </div>
             </Fade>
             <Fade right>
-              <div className="max-w-xl">
+              <div className="max-w-xl text-justify">
                 We understand the importance of wellbeing for a fulfilling life,
                 which is why our team at Kefi is dedicated to creating healing
                 experiences that refresh and rejuvenate the mind and soul. With
-                personalized relaxation services, delicious cuisine, and
+                personalised relaxation services, delicious cuisine, and
                 tranquil environments, our goal is to help you escape the
                 outside world and find inner peace. Discover more about our
-                approach to wellbeing and how we can help you create your own
-                oasis of serenity.
+                approach to wellbeing and how we can help you create your oasis
+                of serenity.
               </div>
             </Fade>
           </div>
         </div>
       </section>
-
-      <section>
-        <div
-          className="overflow-hidden md:ml-24 ml-10 mt-16"
-          ref={sliderRef}
-          onTouchStart={handleTouchStart}
-          onTouchEnd={handleTouchEnd}
-        >
-          <div className="grid grid-cols-14 relative gap-5 md:w-[2700px] w-[1800px]">
-            <Zoom>
-              {masonry.map((item, index) => (
-                <div className={`bg-primaryDarkBlue ${item.span}`} key={index}>
-                  <GatsbyImage
-                    image={getImage(
-                      data.allFile.nodes.find(
-                        (node) => node.name === item.image
-                      )
-                    )}
-                    alt={item.image}
-                    className="w-full h-full bg-cover"
-                  />
-                </div>
-              ))}
-            </Zoom>
+      <section className="">
+        <div className="xl:ml-36 lg:ml-36 md:ml-24 ml-14 pt-20 container">
+          <MainSlider />
+        </div>
+        <div className="flex justify-center mt-5">
+          <div>
+            <div className="swiper-custom-pagination flex items-center mt-2" />
           </div>
         </div>
-        <Zoom>
-          <div className="pagination flex justify-center items-center mt-10 gap-2">
-            {masonry.slice(0, 5).map((item, index) => (
-              <span
-                key={index}
-                className={`dot ${currentSlide === index ? 'active' : ''}`}
-                onClick={() => handleDotClick(index)}
-              ></span>
-            ))}
-          </div>
-        </Zoom>
       </section>
       <section>
         <Zoom>

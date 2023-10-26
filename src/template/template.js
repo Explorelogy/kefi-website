@@ -125,18 +125,6 @@ export const query = graphql`
           gatsbyImageData(width: 1920, quality: 100, placeholder: BLURRED)
         }
       }
-      subTitle
-      desc
-      images {
-        image {
-          publicURL
-          childImageSharp {
-            gatsbyImageData(width: 1920, quality: 100, placeholder: BLURRED)
-          }
-        }
-        colspan
-        rowspan
-      }
     }
   }
 `
