@@ -9,7 +9,7 @@ const Idea = () => {
           <div className=" font-extrabold font-poppins mb-8 lg:text-left text-center   text-primaryDarkBlue lg:max-w-xl max-w-none text-4xl">
             Tell us about your idea!
           </div>
-          <div className="max-w-lg lg:text-left text-center">
+          <div className="max-w-lg lg:text-justify text-center">
             Get in touch with us today and start your journey towards
             constructing a hospitality experience that will be unforgettable and
             unique.

@@ -5,8 +5,7 @@ import { convertToBgImage } from "gbimage-bridge"
 import BackgroundImage from "gatsby-background-image"
 
 const AllImage = () => {
-
-    const data = useStaticQuery(graphql`
+  const data = useStaticQuery(graphql`
     query {
       allFile(filter: { sourceInstanceName: { eq: "images" } }) {
         nodes {
@@ -28,7 +27,6 @@ const AllImage = () => {
           gatsbyImageData(width: 1920, quality: 100, placeholder: BLURRED)
         }
       }
-    
     }
   `)
 

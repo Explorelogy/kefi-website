@@ -34,21 +34,23 @@ const Footer = () => {
       <div className="px-20">
         <div className="grid lg:grid-cols-3 grid-row  items-center">
           <div></div>
-          <div className="flex justify-center items-center top-0  h-full w-full ">
-            {/* Center the image on all screens */}
-            <StaticImage
-              src="../images/09 Contact/Kefi_Logo_icon.png"
-              width={50}
-              className="mx-auto" // Center the image horizontally
-            />
-          </div>
-          <div>
+          <Link to="/">
+            <div className="flex justify-center items-center top-0  h-full w-full ">
+              {/* Center the image on all screens */}
+              <StaticImage
+                src="../images/09 Contact/Kefi_Logo_icon.png"
+                width={50}
+                className="mx-auto" // Center the image horizontally
+              />
+            </div>
+          </Link>
+          {/* <div>
             <Link to="/contact-us">
               <div className="text-sm font-extrabold text-primaryDarkBlue cursor-pointer lg:mt-0 mt-6 text-center lg:text-right ">
                 Contact Us
               </div>
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
       {/* <div>

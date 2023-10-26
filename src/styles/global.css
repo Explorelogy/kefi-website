@@ -14,25 +14,25 @@ html {
   scroll-behavior: smooth;
 }
 
-.dot {
+.swiper-pagination-bullet {
   display: inline-block;
-  width: 10px;
-  height: 10px;
+  width: 10px !important;
+  height: 10px !important;
   border-radius: 50%;
-  background-color: #b1c4d4;
+  background-color: #1f3866 !important;
 
   margin: 0 2px;
   cursor: pointer;
   transition: background-color 0.1s ease-in-out;
 }
 
-.dot.active {
-  width: 15px;
-  height: 15px;
-  background-color: #1f3866;
+.swiper-pagination-bullet-active {
+  width: 15px !important;
+  height: 15px !important;
+  background-color: #1f3866 !important;
 }
 
-.dot:hover {
+.swiper-pagination-bullet:hover {
   background-color: #1f3866;
 }
 .masonry {

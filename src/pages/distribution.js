@@ -194,13 +194,13 @@ const DistributionPage = () => {
             </Fade>
             <Fade right>
               <div className="max-w-xl">
-                Discover how Kefi's extensive infrastructure network can
-                streamline your distribution process and ensure your products
-                are delivered on time and in perfect condition. With our expert
-                supply chain logistics, you can trust us to handle your
-                distribution needs with precision and efficiency, allowing you
-                to focus on delivering the best possible customer experience.
-                Learn more about our distribution solutions today.
+                Discover how Kefi Hospitality Group's extensive infrastructure
+                network can streamline your distribution process and ensure your
+                products are delivered on time and in perfect condition. With
+                our expert supply chain logistics, you can trust us to handle
+                your distribution needs with precision and efficiency, allowing
+                you to focus on delivering the best possible customer
+                experience. Learn more about our distribution solutions today.
               </div>
             </Fade>
           </div>
