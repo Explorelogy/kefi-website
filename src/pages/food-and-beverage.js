@@ -155,10 +155,10 @@ const FoodAndBeveragePage = () => {
       </section>
 
       <section>
-        <div className="bg-gray-200/30 py-24 md:px-32 px-10">
-          <div className="flex md:flex-row flex-col justify-center gap-10 items-center text-primaryDarkBlue md:text-left text-center">
+        <div className="bg-gray-200/30 py-10 md:py-24 lg:px-24 xl:px-32 px-10">
+          <div className="flex lg:flex-row flex-col justify-center gap-10 lg:gap-16 xl:gap-5 items-center text-primaryDarkBlue md:text-left text-center">
             <Fade left>
-              <div className=" font-poppins text-4xl  font-bold max-w-xs leading-snug ">
+              <div className=" font-poppins text-4xl  font-bold lg:max-w-xs leading-snug">
                 Learn about
                 <br /> Food & Beverage
               </div>
@@ -219,7 +219,7 @@ const FoodAndBeveragePage = () => {
       </section>
       <section>
         <Zoom>
-          <div className="lg:px-80 px-10 lg:py-24 py-20">
+          <div className="">
             <Idea />
           </div>
         </Zoom>

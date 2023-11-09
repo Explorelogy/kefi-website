@@ -207,22 +207,28 @@ export default function MainSlider() {
       <Swiper
         breakpoints={{
           375: {
-            slidesPerView: 0.6,
+            slidesPerView: 0.5,
           },
           425: {
-            slidesPerView: 0.7,
+            slidesPerView: 0.6,
           },
           1536: {
             slidesPerView: 1.3,
           },
           768: {
-            slidesPerView: 0.9,
+            slidesPerView: 0.8,
           },
           1024: {
-            slidesPerView: 1.1,
+            slidesPerView: 0.9,
           },
           1280: {
             slidesPerView: 1.2,
+          },
+          1440: {
+            slidesPerView: 1.1,
+          },
+          1536: {
+            slidesPerView: 1.3,
           },
         }}
         pagination={{
@@ -267,21 +273,36 @@ export default function MainSlider() {
           <div className="grid grid-cols-7 grid-rows-2 gap-5">
             <BackgroundImage
               {...allImages.well_beign_gallery_2}
-              className="col-span-2 row-span-2 bg-red-400"
+              className="col-span-5 row-span-2 bg-red-400"
             ></BackgroundImage>
             <BackgroundImage
               {...allImages.well_beign_gallery_5}
-              className="col-span-2 py-20 md:py-24 lg:py-32 xl:py-40 bg-green-400"
+              className="col-span-2 py-20 md:py-28 lg:py-32 xl:py-40 bg-green-400"
             >
               {" "}
             </BackgroundImage>
-            <BackgroundImage
-              {...allImages.well_beign_gallery_3}
-              className="col-span-3 row-span-0 bg-red-400"
-            ></BackgroundImage>
+
             <BackgroundImage
               {...allImages.well_beign_gallery_6}
-              className="col-span-2 py-20 md:py-24 lg:py-32 xl:py-40 bg-green-400"
+              className="col-span-2 py-20 md:py-28 lg:py-32 xl:py-40 bg-green-400"
+            >
+              {" "}
+            </BackgroundImage>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="grid grid-cols-7 grid-rows-2 gap-5">
+            <BackgroundImage
+              {...allImages.well_beign_gallery_3}
+              className="col-span-3  bg-red-400"
+            ></BackgroundImage>
+            <BackgroundImage
+              {...allImages.well_beign_gallery_11}
+              className="col-span-2 row-span-2 bg-red-400"
+            ></BackgroundImage>
+            <BackgroundImage
+              {...allImages.well_beign_gallery_9}
+              className="col-span-2 py-20 md:py-28 lg:py-32 xl:py-40 bg-green-400"
             >
               {" "}
             </BackgroundImage>
@@ -289,28 +310,13 @@ export default function MainSlider() {
               {...allImages.well_beign_gallery_15}
               className="col-span-3 row-span-0 bg-red-400"
             ></BackgroundImage>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="grid grid-cols-7 grid-rows-2 gap-5">
-            <BackgroundImage
-              {...allImages.well_beign_gallery_2}
-              className="col-span-2 row-span-2 bg-red-400"
-            ></BackgroundImage>
-            <BackgroundImage
-              {...allImages.well_beign_gallery_9}
-              className="col-span-2 py-20 md:py-24 lg:py-32 xl:py-40 bg-green-400"
-            >
-              {" "}
-            </BackgroundImage>
-            <div className="col-span-3 row-span-0 bg-white"></div>
+
             <BackgroundImage
               {...allImages.well_beign_gallery_7}
-              className="col-span-2 py-20 md:py-24 lg:py-32 xl:py-40 bg-green-400"
+              className="col-span-2 py-20 md:py-28 lg:py-32 xl:py-40 bg-green-400"
             >
               {" "}
             </BackgroundImage>
-            <div className="col-span-3 row-span-0 bg-white"></div>
           </div>
         </SwiperSlide>
       </Swiper>

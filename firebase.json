@@ -1,8 +1,7 @@
 {
   "hosting": {
+    "site": "kefi-hospitality-production",
     "public": "public",
-    "site": "kefi-hospitality",
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
-    
   }
 }

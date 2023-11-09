@@ -13,6 +13,9 @@ html {
   color: #212121;
   scroll-behavior: smooth;
 }
+.wider-slide {
+  width: 150%;
+}
 
 .swiper-pagination-bullet {
   display: inline-block;

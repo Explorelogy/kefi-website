@@ -99,13 +99,19 @@ export default function MainSlider1() {
             slidesPerView: 1.3,
           },
           768: {
-            slidesPerView: 0.9,
+            slidesPerView: 0.8,
           },
           1024: {
-            slidesPerView: 1.1,
+            slidesPerView: 0.9,
           },
           1280: {
-            slidesPerView: 1.2,
+            slidesPerView: 0.9,
+          },
+          1440: {
+            slidesPerView: 0.9,
+          },
+          1536: {
+            slidesPerView: 1,
           },
         }}
         pagination={{
@@ -116,7 +122,7 @@ export default function MainSlider1() {
         modules={[FreeMode, Pagination]}
         spaceBetween={20}
         slidesPerView={1}
-        className="mySwiper "
+        className="mySwiper   "
       >
         <SwiperSlide>
           <div className="grid grid-cols-7 grid-rows-2 gap-5">
@@ -126,7 +132,7 @@ export default function MainSlider1() {
             ></BackgroundImage>
             <BackgroundImage
               {...allImages.imagee}
-              className="col-span-2 py-20 md:py-28 lg:py-32 xl:py-40 bg-green-400"
+              className="col-span-2 py-20 md:py-28 lg:py-36 xl:py-48 bg-green-400"
             >
               {" "}
             </BackgroundImage>
@@ -136,7 +142,7 @@ export default function MainSlider1() {
             ></BackgroundImage>
             <BackgroundImage
               {...allImages.Galleryitem1}
-              className="col-span-2 py-20 md:py-28 lg:py-32 xl:py-40 "
+              className="col-span-2 py-20 md:py-28 lg:py-36 xl:py-48 "
             >
               {" "}
             </BackgroundImage>
@@ -146,7 +152,7 @@ export default function MainSlider1() {
             ></BackgroundImage>
           </div>
         </SwiperSlide>
-        <SwiperSlide>
+        {/* <SwiperSlide>
           <div className="grid grid-cols-7 grid-rows-2 gap-5">
             <BackgroundImage
               {...allImages.Galleryitem}
@@ -173,7 +179,7 @@ export default function MainSlider1() {
               className="col-span-3 row-span-0 bg-red-400"
             ></BackgroundImage>
           </div>
-        </SwiperSlide>
+        </SwiperSlide> */}
       </Swiper>
     </>
   )
