@@ -96,9 +96,9 @@ export default class Contact extends React.Component {
     return (
       <Layout>
         <section>
-          <div className="px-32 mb-8 h-full relative py-28">
+          <div className="xl:px-32 md:px-20 px-10 mb-8 h-full relative py-20 md:py-28">
             <div className="flex justify-center items-center">
-              <div className="flex xl:flex-row flex-col items-center  gap-32 justify-center container">
+              <div className="flex xl:flex-row flex-col items-center md:gap-24 gap-12 xl:gap-32 justify-center xl:container">
                 <div className="flex   items-center justify-center">
                   <div className="">
                     <div className="">
@@ -115,7 +115,7 @@ export default class Contact extends React.Component {
                     </div>
 
                     <div>
-                      <div className=" text-primaryDarkBlue max-w-xl text-justify ">
+                      <div className=" text-primaryDarkBlue xl:max-w-xl lg:max-w-2xl text-center xl:text-justify ">
                         We love hearing new ideas and receiving new challenges,
                         so get in touch with us today! If you want to build a
                         hospitality concept that will leave a lasting impression
@@ -123,8 +123,8 @@ export default class Contact extends React.Component {
                         create something truly magical.
                       </div>
 
-                      <div className=" flex flex-col xl:flex-row gap-10 mt-10">
-                        <div className="flex  gap-4">
+                      <div className=" flex  xl:justify-normal justify-center lg:ml-0 md:ml-1  flex-col md:flex-row gap-10 mt-10">
+                        <div className="flex   gap-6">
                           <div className="">
                             <StaticImage
                               src="../images/09 Contact/icon.png"
@@ -160,7 +160,7 @@ export default class Contact extends React.Component {
                           </div>
                         </div>
                       </div>
-                      <div className="flex gap-6 mt-8 ">
+                      <div className="flex xl:ml-0 md:ml-8 lg:ml-16 gap-6 mt-8 ">
                         <div>
                           <StaticImage
                             src="../images/09 Contact/Groupp.png"
@@ -168,7 +168,7 @@ export default class Contact extends React.Component {
                           />
                         </div>
 
-                        <div className="flex j flex-col justify-items-center">
+                        <div className="flex  flex-col justify-items-center">
                           <div className="text-base font-poppins leading-6 font-bold align-top">
                             Address
                           </div>
@@ -187,12 +187,12 @@ export default class Contact extends React.Component {
                   </div>
                 </div>
                 <div className="flex  flex-row items-center justify-center">
-                  <div className="w-96 ">
-                    <div className="  mx-auto font-poppins font-extrabold text-3xl sm:text-4xl text-primaryDarkBlue">
+                  <div className="md:w-96  ">
+                    <div className="  mx-auto font-poppins font-extrabold xl:text-start text-center text-3xl sm:text-4xl text-primaryDarkBlue">
                       Drop A Message
                     </div>
                     <form action="" onSubmit={this.onSubmit}>
-                      <div className="mt-8">
+                      <div className="mt-10">
                         <div className="font-montserrat text-primaryDarkBlue">
                           Enter Your Name
                         </div>
@@ -264,15 +264,13 @@ export default class Contact extends React.Component {
                         </div>
                       </div>
 
-                      <div className=" mt-6 ">
-                        <div>
-                          <button
-                            className=" w-1/2 py-4 px-2 rounded-lg  text-white bg-primaryDarkBlue font-semibold font-poppins cursor-pointer hover:bg-primaryBlue duration-200 hover:text-white "
-                            type="submit"
-                          >
-                            Submit Message
-                          </button>
-                        </div>
+                      <div className="   flex xl:justify-normal justify-center  ">
+                        <button
+                          className="   py-4  xl:w-1/2 md:w-3/5 mt-10  px-4 md:px-2 rounded-lg  text-white bg-primaryDarkBlue font-semibold font-poppins cursor-pointer hover:bg-primaryBlue duration-200 hover:text-white "
+                          type="submit"
+                        >
+                          Submit Message
+                        </button>
                       </div>
                     </form>
                   </div>

@@ -138,16 +138,16 @@ const WellbeingPage = () => {
         </div>
       </section>
       <section>
-        <div className="bg-gray-200/30 py-24 md:px-32 px-10">
-          <div className="flex md:flex-row flex-col justify-center gap-10  items-center text-primaryDarkBlue md:text-left text-center">
+        <div className="bg-gray-200/30 py-10 md:py-24 lg:px-24 xl:px-32 px-10">
+          <div className="flex lg:flex-row flex-col justify-center gap-10 lg:gap-16 xl:gap-5 items-center text-primaryDarkBlue md:text-left text-center">
             <Fade left>
-              <div className=" font-poppins text-4xl  font-bold max-w-xs leading-snug ">
+              <div className=" font-poppins text-4xl lg:text-start text-center  font-bold lg:max-w-xs leading-snug ">
                 Learn about
                 <br /> Wellbeing
               </div>
             </Fade>
             <Fade right>
-              <div className="max-w-xl text-justify">
+              <div className="xl:max-w-xl text-center lg:text-justify">
                 We understand the importance of wellbeing for a fulfilling life,
                 which is why our team at Kefi is dedicated to creating healing
                 experiences that refresh and rejuvenate the mind and soul. With
@@ -162,7 +162,7 @@ const WellbeingPage = () => {
         </div>
       </section>
       <section className="">
-        <div className="xl:ml-36 lg:ml-36 md:ml-24 ml-14 pt-20 container">
+        <div className="xl:ml-36 lg:ml-36 md:ml-24 ml-14 pt-20 ">
           <MainSlider />
         </div>
         <div className="flex justify-center mt-5">
@@ -173,7 +173,7 @@ const WellbeingPage = () => {
       </section>
       <section>
         <Zoom>
-          <div className="lg:px-80 px-10 lg:py-24 py-20">
+          <div className="">
             <Idea />
           </div>
         </Zoom>
